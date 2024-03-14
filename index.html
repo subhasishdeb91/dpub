@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-[#f1f0eb] bg-[url('images/banner-bg.png')] bg-bottom bg-contain pb-20 md:pb-36 lg:pb-56 bg-no-repeat">
+        <div class="container mx-auto px-3">
+            <div class="columns-2 py-5 mb-24">
+                <img src="images/main-logo.svg" alt="Logo" class="header-logo w-32 sm:w-36 md:w-44 mt-1"/>
+                <div class="flex justify-end gap-2 sm:gap-4">
+                    <button class="signin border border-gray-600 border-solid py-2 px-4 rounded-full bg-transparent transition-colors hover:bg-[#923000] hover:text-white hover:border-[#923000] min-w-20 sm:min-w-28 text-sm sm:text-base whitespace-nowrap">Log In</button>
+                    <button class="signup border border-gray-600 border-solid py-2 px-4 rounded-full bg-transparent transition-colors hover:bg-[#923000] hover:text-white hover:border-[#923000] min-w-20 sm:min-w-28 text-sm sm:text-base whitespace-nowrap">Sign Up</button>
+                </div>
+            </div>
+            <div class="banner-content">
+                <h1 class="text-center text-3xl sm:text-4xl md:text-5xl mb-3">Search Doctor, Make an Appointment</h1>
+                <p class="text-center text-sm sm:text-base">Discover the best doctors & Medical shop in the city nearest to you.</p>
+                <div class="search-form w-full xl:w-4/5 2xl:w-3/5 mx-auto mt-8 sm:mt-12 mb-20">
+                    <form class="flex justify-center lg:justify-between gap-4 items-center lg:items-start flex-col lg:flex-row">
+                        <input type="text" id="location-input" placeholder="Enter Location" class="pl-10 w-full lg:w-1/4 border border-solid border-gray-400 bg-[url('images/location.svg')] bg-no-repeat bg-[6px_center] rounded h-12">
+                        <span class="condition-input flex flex-col gap-4 w-full lg:w-1/2">
+                            <input type="text" id="category-input" placeholder="Searchs Doctors, Medical Shops & Paramedics" class="pl-10 border border-solid border-gray-400 w-full bg-[url('images/search.svg')] bg-no-repeat bg-[6px_center] rounded h-12">
+                            <input type="text" id="subcategory-input" placeholder="Your category" class="hidden pl-10 border border-solid border-gray-400 w-full bg-[url('images/category.svg')] bg-no-repeat bg-[6px_center] rounded h-12">
+                        </span>
+                        <input type="submit" id="location-input" value="Submit" class="w-full sm:w-96 lg:w-1/4 h-12 bg-[#923000] text-white rounded cursor-pointer">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content-area mt-20">
+        <!--  What you want -->
+        <div class="container mx-auto px-3">
+            <div class="what-you-want">
+                <h3 class="text-center text-3xl sm:text-4xl mb-10">What are you loking for?</h3>
+                <div class="columns-3 gap-10 lg:gap-20 flex flex-col lg:flex-row justify-between">
+                    <div class="box-medical shadow-lg border border-gray-200 rounded-lg">
+                        <img src="images/doctor.jpg" alt="Doctor" class="rounded opacity-85 w-full" />
+                        <div class="w-20 h-20 rounded-lg bg-[#923000] flex justify-center items-center relative -top-24 left-4 -mb-16">
+                            <img src="images/stethoscope.svg" alt="stethoscope" class="w-12" />
+                        </div>
+                        <h6 class="text-left text-2xl px-4">Visit a Doctor</h6>
+                        <p class="px-4 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="javascript:void(0)" class="font-bold gap-3 mx-4 mt-5 mb-5 w-28 flex">Book Now <img src="images/arrow_right.svg" alt="arrow-right" /></a>
+                    </div>
+                    <div class="box-medical shadow-lg border border-gray-200 rounded-lg">
+                        <img src="images/medicine-shop.jpg" alt="Medicine Shop" class="rounded opacity-85 w-full" />
+                        <div class="w-20 h-20 rounded-lg bg-[#923000] flex justify-center items-center relative -top-24 left-4 -mb-16">
+                            <img src="images/pill.svg" alt="pill" class="w-12" />
+                        </div>
+                        <h6 class="text-left text-2xl px-4">Find a Pharmacy</h6>
+                        <p class="px-4 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="javascript:void(0)" class="font-bold gap-3 mx-4 mt-5 mb-5 w-28 flex">Find Now <img src="images/arrow_right.svg" alt="arrow-right" /></a>
+                    </div>
+                    <div class="box-medical shadow-lg border border-gray-200 rounded-lg">
+                        <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        <div class="w-20 h-20 rounded-lg bg-[#923000] flex justify-center items-center relative -top-24 left-4 -mb-16">
+                            <img src="images/syringe.svg" alt="syringe" class="w-12" />
+                        </div>
+                        <h6 class="text-left text-2xl px-4">Meet a Paramedics</h6>
+                        <p class="px-4 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="javascript:void(0)" class="font-bold gap-3 mx-4 mt-5 mb-5 w-28 flex">Book Now <img src="images/arrow_right.svg" alt="arrow-right" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor setion -->
+        <div class="doctors-card mt-24 py-16 bg-[#f1f0eb]">
+            <div class="container mx-auto px-3">
+                <h3 class="text-center text-3xl sm:text-4xl mb-10">Our Specialist Doctors</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+                    <!-- Doctors Listing -->
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="doc-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="doc-details">
+                                <h4 class="text-xl mb-1">Dr. Somnath Karmakar</h4>
+                                <p class="speciality font-bold mb-1">Dermatology <span class="licence text-xs ml-2 bg-[#923000] rounded-full px-3 py-1 text-white opacity-75">Reg No. WB12458655</span></p>
+                                <p class="degree">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac</p>
+                                <p class="hospitals mt-3"><strong>Hospitals:</strong> SSKM, RN Tagore</p>
+                            </div>
+                        </div>
+                        <div class="doc-book flex justify-between mt-3 items-center">
+                            <p><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong> Sat, Sun, Mon, Tues</p>
+                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Book Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                        </div>
+                    </div>
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="exp absolute z-10 left-1 -top-3 text-white text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center">
+                            <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
+                        </div>
+                        <div class="doc-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="doc-details">
+                                <h4 class="text-xl mb-1">Dr. Somnath Karmakar</h4>
+                                <p class="speciality font-bold mb-1">Dermatology <span class="licence text-xs ml-2 bg-[#923000] rounded-full px-3 py-1 text-white opacity-75">Reg No. WB12458655</span></p>
+                                <p class="degree">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac</p>
+                                <p class="hospitals mt-3"><strong>Hospitals:</strong> SSKM, RN Tagore</p>
+                            </div>
+                        </div>
+                        <div class="doc-book flex justify-between mt-3 items-center">
+                            <p><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong> Sat, Sun, Mon, Tues</p>
+                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Book Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                        </div>
+                    </div>
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="doc-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="doc-details">
+                                <h4 class="text-xl mb-1">Dr. Somnath Karmakar</h4>
+                                <p class="speciality font-bold mb-1">Dermatology <span class="licence text-xs ml-2 bg-[#923000] rounded-full px-3 py-1 text-white opacity-75">Reg No. WB12458655</span></p>
+                                <p class="degree">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac</p>
+                                <p class="hospitals mt-3"><strong>Hospitals:</strong> SSKM, RN Tagore</p>
+                            </div>
+                        </div>
+                        <div class="doc-book flex justify-between mt-3 items-center">
+                            <p><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong> Sat, Sun, Mon, Tues</p>
+                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Book Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Medical Listing -->
+                    <div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="medical-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="medical-details">
+                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                                <p class="address font-bold mb-1">Ns Road, kolkata</p>
+                                <p class="store">Chemist Store, Baby Foods</p>
+                            </div>
+                        </div>
+                        <div class="medical-book flex justify-between mt-3 items-center">
+                            <p><strong>7</strong> Days Open</p>
+                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                        </div>
+                    </div>
+                    <div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="medical-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="medical-details">
+                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                                <p class="address font-bold mb-1">Ns Road, kolkata</p>
+                                <p class="store">Chemist Store, Baby Foods</p>
+                            </div>
+                        </div>
+                        <div class="medical-book flex justify-between mt-3 items-center">
+                            <p><strong>7</strong> Days Open</p>
+                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                        </div>
+                    </div>
+                    <div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="medical-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="medical-details">
+                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                                <p class="address font-bold mb-1">Ns Road, kolkata</p>
+                                <p class="store">Chemist Store, Baby Foods</p>
+                            </div>
+                        </div>
+                        <div class="medical-book flex justify-between mt-3 items-center">
+                            <p><strong>7</strong> Days Open</p>
+                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Paramedics Listing -->
+                    <div class="paramedics shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="paramedics-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="paramedics-details">
+                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                                <p class="speciality font-bold mb-1">Ns Road, kolkata</p>
+                                <p class="degree">Injection, Saline</p>
+                                <div class="paramedics-book flex justify-end mt-7 items-center">
+                                    <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paramedics shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="paramedics-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="paramedics-details">
+                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                                <p class="speciality font-bold mb-1">Ns Road, kolkata</p>
+                                <p class="degree">Injection, Saline</p>
+                                <div class="paramedics-book flex justify-end mt-7 items-center">
+                                    <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paramedics shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="paramedics-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="paramedics-details">
+                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                                <p class="speciality font-bold mb-1">Ns Road, kolkata</p>
+                                <p class="degree">Injection, Saline</p>
+                                <div class="paramedics-book flex justify-end mt-7 items-center">
+                                    <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="py-16 bg-[#2c160b]">
+        <div class="container mx-auto px-3">
+            <img src="images/main-logo.svg" alt="Logo" class="invert mx-auto block w-40" />
+            <ul class="flex justify-center items-center gap-8 mt-5">
+                <li><a href="javascript:void(0)" class="text-white text-xs">Contact</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-xs">Privacy Policy</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-xs">Terms & Condition</a></li>
+            </ul>
+            <p class="text-center text-white text-xs mt-5">Copyright @2024</p>
+        </div>
+    </footer>
+
+
+<!--Modal-->
+
+<!--div class="modal-container fixed top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.5)] z-20 flex justify-center items-center">
+    <div class="modal-box flex flex-col gap-4 w-11/12 md:w-9/12 lg:w-1/2 lg:max-w-2xl bg-white p-6 rounded-lg max-h-[620px] overflow-auto overscroll-none">
+        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="default-modal">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+        </button>
+        <div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative">
+            <div class="medical-portfolio flex gap-4">
+                <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                <div class="medical-details">
+                    <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                    <p class="address font-bold mb-1">Ns Road, kolkata</p>
+                    <p class="store">Chemist Store, Baby Foods</p>
+                </div>
+            </div>
+            <div class="medical-book flex justify-between mt-3 items-center">
+                <p><strong>7</strong> Days Open</p>
+                <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+            </div>
+        </div>
+        <div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative">
+            <div class="medical-portfolio flex gap-4">
+                <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                <div class="medical-details">
+                    <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                    <p class="address font-bold mb-1">Ns Road, kolkata</p>
+                    <p class="store">Chemist Store, Baby Foods</p>
+                </div>
+            </div>
+            <div class="medical-book flex justify-between mt-3 items-center">
+                <p><strong>7</strong> Days Open</p>
+                <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+            </div>
+        </div>
+    </div>
+</div-->
+
+</body>
+</html>
