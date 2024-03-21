@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>medisynk</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -22,13 +22,13 @@
         <div class="main-banner">
             <img src="images/new-banner.jpg" >
         </div>
-        <div class="banner-content bg-[#923000]">
+        <div class="banner-content bg-[#d1c9c9]">
             <!--h1 class="text-center hidden md:block text-3xl sm:text-4xl md:text-5xl mb-3">Search Doctor, Make an Appointment</h1>
             <p class="text-center hidden md:block text-sm sm:text-base">Discover the best doctors & Medical shop in the city nearest to you.</p-->
-            <div class="container mx-auto px-3 py-2 md:py-3">
-                <form class="grid grid-cols-3 gap-2 md:gap-4">
-                    <input type="text" id="location-input" placeholder="Enter Location" class="text-xs md:text-base bg-[length:13px_13px] md:bg-[length:24px_24px] pl-5 md:pl-10 border border-solid border-gray-400 bg-[url('images/location.svg')] bg-no-repeat bg-[6px_center] rounded h-8 md:h-12">
-                    <input type="text" id="category-input" placeholder="Searchs Doctors, Medical Shops & Paramedics" class="bg-[length:13px_13px] md:bg-[length:24px_24px] text-xs md:text-base col-span-2 pl-5 md:pl-10 border border-solid border-gray-400 bg-[url('images/search.svg')] bg-no-repeat bg-[6px_center] rounded h-8 md:h-12">
+            <div class="container mx-auto px-1 py-2 md:py-3">
+                <form class="grid grid-cols-3 gap-1 md:gap-4">
+                    <input type="text" id="location-input" placeholder="Enter Location" class="text-xs md:text-base bg-[length:13px_13px] md:bg-[length:24px_24px] pl-5 md:pl-10 border border-solid border-gray-400 bg-[url('images/location.svg')] bg-no-repeat bg-[6px_center] rounded-lg h-8 md:h-12">
+                    <input type="text" id="category-input" placeholder="Doctors, Medical Shops & Paramedics" class="bg-[length:13px_13px] md:bg-[length:24px_24px] text-xs md:text-base col-span-2 pl-5 md:pl-10 border border-solid border-gray-400 bg-[url('images/search.svg')] bg-no-repeat bg-[6px_center] rounded-lg h-8 md:h-12">
                     <input type="text" id="subcategory-input" placeholder="Your category" class="bg-[length:13px_13px] md:bg-[length:24px_24px] text-xs md:text-base hidden col-span-3 pl-5 md:pl-10 border border-solid border-gray-400 w-full bg-[url('images/category.svg')] bg-no-repeat bg-[6px_center] rounded h-8 md:h-12">
                     <!--input type="submit" id="location-input" value="Submit" class="w-full sm:w-96 lg:w-1/4 h-10 md:h-12 bg-[#923000] text-white rounded cursor-pointer"-->
                 </form>
@@ -36,51 +36,66 @@
         </div>
     </header>
 
-    <div class="main-content-area mt-0 md:mt-20">
+    <div class="main-content-area mt-0 md:mt-2">
         <!--  What you want -->
         <div class="container mx-auto px-3 hidden md:block">
             <div class="what-you-want">
-                <h3 class="text-center text-xl sm:text-4xl mb-4 md:mb-10">What are you loking for?</h3>
                 <div class="columns-3 gap-2 lg:gap-20 flex flex-row justify-between w-full overflow-auto snap-x">
-                    <a href="#">
+                     <a href="#">
                         <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
-                            <img src="images/doctor.jpg" alt="Doctor" class="rounded opacity-85 w-full" />
-                            <div class="w-8 h-8 md:w-20 md:h-20 rounded-lg bg-[#923000] flex justify-center items-center relative -top-8 md:-top-24 left-2 md:left-4 -mb-16">
-                                <img src="images/stethoscope.svg" alt="stethoscope" class="w-6" />
-                            </div>
-                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Visit a Doctor</h6>
-                            <p class="px-2 md:px-4 text-gray-500 text-sm md:text-base hidden md:block mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <!--a href="javascript:void(0)" class="font-bold text-sm md:text-base gap-3 mx-2 md:mx-4 mt-5 mb-5 w-28 flex">Book Now <img src="images/arrow_right.svg" alt="arrow-right" /></a-->
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
-                            <img src="images/medicine-shop.jpg" alt="Medicine Shop" class="rounded opacity-85 w-full" />
-                            <div class="w-8 h-8 md:w-20 md:h-20 rounded-lg bg-[#923000] flex justify-center items-center relative -top-8 md:-top-24 left-2 md:left-4 -mb-16">
-                                <img src="images/pill.svg" alt="pill" class="w-12" />
-                            </div>
-                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Find a Pharmacy</h6>
-                            <p class="px-2 md:px-4 text-gray-500 text-sm md:text-base hidden md:block mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <!--a href="javascript:void(0)" class="font-bold text-sm md:text-base gap-3 mx-2 md:mx-4 mt-5 mb-5 w-28 flex">Find Now <img src="images/arrow_right.svg" alt="arrow-right" /></a-->
+                            <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
                         </div>
                     </a>
                     <a href="#">
                         <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
                             <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
-                            <div class="w-8 h-8 md:w-20 md:h-20 rounded-lg bg-[#923000] flex justify-center items-center relative -top-8 md:-top-24 left-2 md:left-4 -mb-16">
-                                <img src="images/syringe.svg" alt="syringe" class="w-12" />
-                            </div>
-                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Meet a Paramedics</h6>
-                            <p class="px-2 md:px-4 text-gray-500 text-sm md:text-base hidden md:block mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <!--a href="javascript:void(0)" class="font-bold text-sm md:text-base gap-3 mx-2 md:mx-4 mt-5 mb-5 w-28 flex">Book Now <img src="images/arrow_right.svg" alt="arrow-right" /></a-->
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
                         </div>
                     </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
+                            <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
+                            <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
+                            <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
+                            <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
+                            <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-50 snap-start sm:w-fit">
+                            <img src="images/paramedics.jpg" alt="Paramedics" class="rounded opacity-85 w-full" />
+                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">Paramedics</h6>
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
         </div>
 
         <!-- Doctor setion -->
-        <div class="doctors-card mt-0 md:mt-24 py-3 md:py-16 bg-[#f1f0eb]">
+        <div class="doctors-card mt-0 md:mt-4 py-3 md:py-4 bg-[#f1f0eb]">
             <div class="container mx-auto px-3">
                 <h3 class="text-center text-xl sm:text-2xl md:text-4xl mb-2 md:mb-10">Our Specialist Doctors</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-10">
@@ -135,20 +150,6 @@
                     </div>
 
                     <!-- Medical Listing -->
-                    <!--div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
-                        <div class="medical-portfolio flex gap-4">
-                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
-                            <div class="medical-details">
-                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
-                                <p class="address font-bold mb-1">Ns Road, kolkata</p>
-                                <p class="store">Chemist Store, Baby Foods</p>
-                            </div>
-                        </div>
-                        <div class="medical-book flex justify-between mt-3 items-center">
-                            <p><strong>7</strong> Days Open</p>
-                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
-                        </div>
-                    </div>
                     <div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
                         <div class="medical-portfolio flex gap-4">
                             <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
@@ -176,7 +177,21 @@
                             <p><strong>7</strong> Days Open</p>
                             <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
                         </div>
-                    </div-->
+                    </div>
+                    <div class="medical-hall shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
+                        <div class="medical-portfolio flex gap-4">
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-40" />
+                            <div class="medical-details">
+                                <h4 class="text-xl mb-1">M/S Somnath Karmakar</h4>
+                                <p class="address font-bold mb-1">Ns Road, kolkata</p>
+                                <p class="store">Chemist Store, Baby Foods</p>
+                            </div>
+                        </div>
+                        <div class="medical-book flex justify-between mt-3 items-center">
+                            <p><strong>7</strong> Days Open</p>
+                            <a href="javascript:void(0);" class="bg-[#923000] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full">Contact<img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
+                        </div>
+                    </div>
 
                     <!-- Paramedics Listing -->
                     <!--div class="paramedics shadow-lg border border-gray-300 rounded-lg p-4 w-full relative bg-white">
