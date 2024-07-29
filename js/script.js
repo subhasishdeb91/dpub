@@ -48,7 +48,7 @@ $(document).ready(function () {
     let slider = document.querySelector(".slider");
     let placeholder = document.querySelector(".placeholder");
 
-    let list = ["HTML", "CSS", "JavaScript", "PHP"];
+    let list = ["Doctors", "Paramedics", "Pharmacy", "Pathology","Radiology"];
     let i = 0;
     let intervals = "";
     text_animation();
