@@ -4,8 +4,8 @@ $(document).ready(function () {
 
     $(function () {
         // Owl Carousel
-        var owl = $(".main-banner .slider-banner .owl-carousel");
-        owl.owlCarousel({
+        var owl1 = $(".main-banner .slider-banner .owl-carousel");
+        owl1.owlCarousel({
             items: 1,
             // margin: 2,
             loop: true,
@@ -16,17 +16,42 @@ $(document).ready(function () {
         });
     });
 
+    $(function () {
+        // Owl Carousel
+        var owl2 = $(".header-ad-banner .slider-banner .owl-carousel");
+        owl2.owlCarousel({
+            items: 2,
+            // margin: 2,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: 50,
+
+        });
+    });
+
+
     document.getElementById('categories').addEventListener('change', function() {
+        var cat_select_box = document.getElementById('category-search-bar');
         var secondSelect = document.getElementById('subcategories');
+        $("html, body").animate({ scrollTop:0 }, "9000");
+
         console.log("test");
         console.log(this.value);
+
         if (this.value === 'Doctors') {
-        secondSelect.style.display = 'block';
-    //    document.getElementsByClassName('searchBarPanel').height = "50px";
+            cat_select_box.classList.remove("col-span-2");
+            cat_select_box.classList.add("col-span-1");
+             secondSelect.style.display = 'block';
         } else {
         secondSelect.style.display = 'none';
+            cat_select_box.classList.add("col-span-2");
+            cat_select_box.classList.remove("col-span-1");
         }
         });
+        document.getElementById('subcategories').addEventListener('change', function() {
+            $("html, body").animate({ scrollTop:0 }, "9000");
+            });
 
     window.openModal = function (modalId) {
         document.getElementById(modalId).style.display = 'flex'
