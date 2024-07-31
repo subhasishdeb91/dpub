@@ -1,3 +1,5 @@
+$("html, body").animate({ scrollTop:0 }, "slow");
+
 $(document).ready(function () {
 
     console.log($(".main-banner .slider-banner .owl-carousel").attr('class'));
