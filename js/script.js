@@ -5,7 +5,6 @@ $(document).ready(function () {
     console.log($(".main-banner .slider-banner .owl-carousel").attr('class'));
 
     $(function () {
-        
         // Owl Carousel
         var owl1 = $(".main-banner .slider-banner .owl-carousel");
         owl1.owlCarousel({
@@ -23,9 +22,9 @@ $(document).ready(function () {
         // Owl Carousel
         var owl2 = $(".header-ad-banner .slider-banner .owl-carousel");
         owl2.owlCarousel({
-            items: 2,
+            items: 1,
             // margin: 2,
-            loop: true,
+            loop: false,
             nav: false,
             dots: false,
             autoplay: 50,
