@@ -163,3 +163,6 @@ select {
 /* .title{
 margin-right: 47px;
 } */
+ .show_placeholder{
+    opacity: 1 ;
+ }

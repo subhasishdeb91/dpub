@@ -29,28 +29,55 @@ $(document).ready(function () {
 
         });
     });
+    var cat_select_box = document.getElementById('category-search-bar');
+    var secondSelect = document.getElementById('subcategories');
+    var location_select = document.getElementById('location');
 
 
     document.getElementById('categories').addEventListener('change', function() {
-        var cat_select_box = document.getElementById('category-search-bar');
-        var secondSelect = document.getElementById('subcategories');
-        $("html, body").animate({ scrollTop:0 }, "9000");
-
-        console.log("test");
-        console.log(this.value);
-
-        if (this.value === 'Doctors') {
+        $("html, body").animate({ scrollTop:0 }, "slow");
+        console.log("this.value = "+this.value);
+        if (this.value != 'All') {
+            console.log("placeholder hide");
+            placeholder.style.display = "none";
+        }
+        if (this.value == 'Doctors') {
             cat_select_box.classList.remove("col-span-2");
             cat_select_box.classList.add("col-span-1");
-             secondSelect.style.display = 'block';
-        } else {
-        secondSelect.style.display = 'none';
+            secondSelect.style.display = 'block';
+        }else if (this.value == 'All') {
+            console.log("placeholder flex"+ this.value);
+           placeholder.style.display = "flex";
+            text_animation();
+            cat_select_box.classList.remove("col-span-1");
+            cat_select_box.classList.add("col-span-2");
+            secondSelect.style.display = 'none';
+            document.getElementById("speciality").selectedIndex =0;
+
+        }
+        else {
+            secondSelect.style.display = 'none';
             cat_select_box.classList.add("col-span-2");
             cat_select_box.classList.remove("col-span-1");
         }
         });
-        document.getElementById('subcategories').addEventListener('change', function() {
-            $("html, body").animate({ scrollTop:0 }, "9000");
+    document.getElementById('subcategories').addEventListener('change', function() {
+        $("html, body").animate({ scrollTop:0 }, "slow");
+        });
+    location_select.addEventListener('change', function() {
+        location_select.value = null;
+    });
+    document.getElementById('location').addEventListener('change', function() {
+            $("html, body").animate({ scrollTop:0 }, "slow");
+            document.getElementById("speciality").selectedIndex =0;
+            document.getElementById("categories").selectedIndex =0;
+            cat_select_box.classList.remove("col-span-1");
+            cat_select_box.classList.add("col-span-2");
+            secondSelect.style.display = 'none';
+            placeholder.style.display = "flex";
+            text_animation();
+            
+
             });
 
     window.openModal = function (modalId) {
@@ -103,10 +130,11 @@ $(document).ready(function () {
     }
 
     // Functionality to hide custom placeholder when input field is focused or it has value inside it.
-    input.onfocus = function () {
-        placeholder.style.display = "none";
-        clearInterval(intervals);
-    }
+    // input.onfocus = function () {
+    //     console.log("placeholder hide");
+    //     placeholder.style.display = "none";
+    //     clearInterval(intervals);
+    // }
     input.onblur = function () {
         if (input.value == "") {
             placeholder.style.display = "flex";
