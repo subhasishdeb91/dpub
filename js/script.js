@@ -1,10 +1,14 @@
-$("html, body").animate({ scrollTop:50 }, "slow");
+
 
 $(document).ready(function () {
 
     console.log($(".main-banner .slider-banner .owl-carousel").attr('class'));
 
     $(function () {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            // true for mobile device
+            ("html, body").animate({ scrollTop:50 }, "slow");
+        }
         // Owl Carousel
         var owl1 = $(".main-banner .slider-banner .owl-carousel");
         owl1.owlCarousel({
