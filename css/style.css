@@ -1,8 +1,13 @@
 :root {
   --theme-col: #923000 ;
+  --theme-alternate-text-col: #f6ebe5 ;
   /* --theme-col: #923000 ; */
-  --sponsor-col: hsl(20, 86%, 54%); 
-    --sponsor-text-col: #070403; 
+  --sponsor-col: #f7ddd0; 
+  --sponsor-text-col: #070403;
+  --topbar-color : #fffaaa; 
+  --topbar-text-color : #923000; 
+  --text-col:#000000;
+  
 
     }
 
@@ -10,16 +15,17 @@
 body{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    color: #333;
+    color: var(--text-col);
 }
 h2, h3, h4, h5{
-    color: #000;
+    color: var(--text-col);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    line-height:1.25rem ;
 }
 
 h6{
-    color: #923000;
+    color: --theme-col;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
@@ -125,11 +131,11 @@ select {
     font-size: large;
  }
  .bannerslider .item {
-    background: #ff3f4d;
+    background: var(--theme-col);
     height: 175px;
 }
 .slider .item {
-    background: #ff3f4d;
+    background: var(--theme-col);
     height: 175px;
     width: auto
 }
@@ -202,7 +208,7 @@ margin-right: 47px;
 .sidebar-content {
     width: 40%;
     position: absolute;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     top: 0;
     bottom: 0;
     right: -40%;

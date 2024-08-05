@@ -31,8 +31,8 @@
             <div class="slider-banner">
                 <div class="owl-carousel owl-theme demo">
                     <div class="item   ">
-                        <div class="justify-center	 items-center text-center bg-amber-200 ">
-                            <span class=" text-center items-center text-sm text-gray-800 text-center">For business querry contact 9999999999
+                        <div class=" items-center text-center bg-[var(--topbar-color)] text-[var(--topbar-text-color)]  ">
+                            <span>For business querry contact 9999999999
                             </span>
                             </div>                    </div>
                     <!-- <div class="item">
@@ -107,7 +107,7 @@
             <div class="pl-2 col-span-6 md:col-span-2 ">
                 
                 <div id="location">
-                    <div class="  text-gray-50  text-xs md:text-sm lg:text-base">
+                    <div class="  text-[var(--theme-alternate-text-col)]  text-xs md:text-sm lg:text-base">
                         <div class="select flex items-center ">
                             <select id="location" class="input custom-select bg-transparent  text-right ">
                                 <option selected="" value="All">Select Location</option>
@@ -124,10 +124,7 @@
            
             <div class="flex col-span-1 justify-end ">
     
-                <button type="button" class=" text-gray-100 btn btn-orange show-sidebar relative z-50 ">
-                  <!-- <svg class="w-5 h-5" aria-hidden="true" viewBox="0 0 17 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                  </svg> -->
+                <button type="button" class=" text-[var(--theme-alternate-text-col)] btn btn-orange show-sidebar relative z-50 ">
                   <div class="nav-icon w-6 md:w-8 lg:w-10 h-6" id="nav-icon">
                       <span></span>
                       <span></span>
@@ -137,35 +134,127 @@
           
                  </button>
             
-            
-            
             <!-- here your sidebar -->
             
-            <aside class="sidebar z-5">
-              <div class="block-dom "></div>
-              <div class="sidebar-content  bg-[var(--theme-col)]">
-                  <div class="container mx-auto px-3 text-center md:text-left ">
-                     <div class="mt-10">
-                      <div><img src="images/main-logo.svg" alt="avatar" class="header-logo mx-auto md:mx-0 w-28 sm:w-36 md:w-44 invert">
+            <!-- <aside class="sidebar z-5 show">
+                <div class="block-dom "></div>
+                <div class="sidebar-content  bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)]">
+                    <div class="container mt-10  px-3 text-center md:text-left ">
+                       <div class="content">
+                        <div><div class="logo py-3">
+                        <img src="images/main-logo.svg" alt="avatar" class="header-logo mx-auto md:mx-0 w-28 sm:w-36 md:w-44 invert">
+                    </div>
+                    </div>
+                
+              <div class="sidebar-text text-start text-base border px-2">About Us</div>
+              <div class="sidebar-text text-start text-base">Contact us</div>
+              <div class="sidebar-text text-start text-base">FAQ</div>
+                       </div>
+                    </div>
+                   
                   </div>
-              
-            <div class="sidebar-text text-start text-base">About Us</div>
-            <div class="sidebar-text text-start text-base">Contact us</div>
-            <div class="sidebar-text text-start text-base">FAQ</div>
-                     </div>
+              </aside> -->
+
+              <aside class="sidebar  z-5 show">
+                <div class="block-dom "></div>
+                <div class="sidebar-content  bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] w-1/2 md:w-1/3 lg:w-1/4">
+
+                <nav class="flex flex-col bg-[var(--theme-col)] h-screen tex-gray-900 border border-[var(--theme-col)]">
+                    <div class="block flex-wrap mt-8 items-center justify-center self-center text-center">
+                      <div class="">
+                        <img src="images/avatar1.jpg" class="mx-auto  rounded-full w-1/2 md:w-1/3">
+                      </div>
+                      <div class="">
+                        <span class="font-semibold">Anonymus user</span>
+                        <!-- <button class="bg-green-500 text-white px-4 py-2 rounded-md border border-blue-500 hover:bg-white hover:text-green-500">
+                          Premium
+                        </button> -->
+                      </div>
+                    </div>
+                    <div class="mt-10 mb-4 ">
+                      <ul class="ml-1 p-3">
+                        <li class="mb-2 py-1 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold ">
+                          <span>
+                            <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24">
+                              <path d="M16 20h4v-4h-4m0-2h4v-4h-4m-6-2h4V4h-4m6
+                                    4h4V4h-4m-6 10h4v-4h-4m-6 4h4v-4H4m0 10h4v-4H4m6
+                                    4h4v-4h-4M4 8h4V4H4v4z"></path>
+                            </svg>
+                          </span>
+                          <a target="_blank">
+                            <span class="ml-2">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="mb-2 py-1 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold rounded rounded-lg">
+                          <span>
+                            <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="currentColor"></path>
+                              <path d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z" fill="currentColor"></path>
+                            </svg>
+                          </span>
+                          <a target="_blank">
+                           
+                            <span class="ml-2">Account</span>
+                          </a>
+                        </li>
+                        <li class="mb-2 py-1 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold rounded rounded-lg">
+                          <span>
+                            <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24">
+                              <path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2
+                                    2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0
+                                    00-2-2h-1V1m-1 11h-5v5h5v-5z"></path>
+                            </svg>
+                          </span>
+                          <a target="_blank">
+                           
+                            <span class="ml-2">Milestones</span>
+                          </a>
+                        </li>
+                        <li class="mb-2 py-1 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold rounded rounded-lg">
+                          <span>
+                            <svg class="fill-current h-5 w-5" viewBox="0 0 24 24">
+                              <path d="M12 4a4 4 0 014 4 4 4 0 01-4 4 4 4 0 01-4-4 4 4 0
+                                    014-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4
+                                    8-4z"></path>
+                            </svg>
+                          </span>
+                          <a target="_blank">
+                            <span class="ml-2">Team</span>
+                          </a>
+                        </li>
+                        <li class="mb-2 py-1 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold rounded rounded-lg">
+                          <span>
+                            <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24">
+                              <path d="M12 13H7v5h5v2H5V10h2v1h5v2M8
+                                    4v2H4V4h4m2-2H2v6h8V2m10 9v2h-4v-2h4m2-2h-8v6h8V9m-2
+                                    9v2h-4v-2h4m2-2h-8v6h8v-6z"></path>
+                            </svg>
+                          </span>
+                          <a target="_blank">
+                            <span class="ml-2">Tasks</span>
+                          </a>
+                        </li>
+                        <li class="mb-2 py-1 flex flex-row  border-gray-300 hover:text-black   hover:bg-gray-300  hover:font-bold rounded rounded-lg">
+                          <span>
+                            <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3C8.86384 3 10.4299 4.27477 10.874 6H19V8H10.874C10.4299 9.72523 8.86384 11 7 11C4.79086 11 3 9.20914 3 7C3 4.79086 4.79086 3 7 3ZM7 9C8.10457 9 9 8.10457 9 7C9 5.89543 8.10457 5 7 5C5.89543 5 5 5.89543 5 7C5 8.10457 5.89543 9 7 9Z" fill="currentColor"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 20C15.1362 20 13.5701 18.7252 13.126 17H5V15H13.126C13.5701 13.2748 15.1362 12 17 12C19.2091 12 21 13.7909 21 16C21 18.2091 19.2091 20 17 20ZM17 18C18.1046 18 19 17.1046 19 16C19 14.8954 18.1046 14 17 14C15.8954 14 15 14.8954 15 16C15 17.1046 15.8954 18 17 18Z" fill="currentColor"></path>
+                            </svg>
+                          </span>
+                          <a target="_blank">
+                            <span class="ml-2">Settings</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
                   </div>
-                 
-                </div>
-            </aside>
+              </aside>
       </div>
-        
            </div>
         <div class="main-banner">
-            <!-- <img src="images/new-banner.jpg" > -->
-
             <!-- slider start -->
             <div class="slider-banner">
-                <!-- <h3></h3> -->
                 <div class="owl-carousel owl-theme demo">
                     
                     <div class="item">
@@ -233,15 +322,43 @@
         </div>
 
     <div class="main-content-area mt-0 ">
-        <!--  What you want -->
-        <div class="container mx-auto px-3 hidden ">
-            <div class="what-you-want">
-                <div class="columns-3 gap-2 lg:gap-20 flex flex-row justify-between w-full overflow-auto snap-x">
+        <!-- small list slider -->
+        <div class="container mx-auto bg-[#f1f0eb]  ">
+            <div class="what-you-want ">
+                <div class="flex flex-row gap-1 justify-between w-full overflow-x-scroll snap-x p-1 border border-[var(--theme-col)] border-opacity-50 rounded-lg">
                     <a href="#">
                         <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
-                            <img src="images/ambu.png" alt="Paramedics" class="rounded opacity-85 w-full" />
-                            <h6 class="text-left text-sm md:text-xl px-2 md:px-4 mt-9 leading-5 md:mt-0 mb-2 md:mb-0">
-                                Paramedics</h6>
+                            <img src="images/smsl/smsl1.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl2.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl3.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl4.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl5.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl6.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl7.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     <!--a href="#">
@@ -302,7 +419,7 @@
 
 
                             <div
-                                class="exp absolute z-2   w-24  text-white text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                                class="exp absolute z-2   w-24  text-[var(--theme-alternate-text-col)] text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
                                 <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
                             </div>
                             <div
@@ -319,7 +436,7 @@
                                 <h4 class="title text-base  mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</h4>
                                 <p class="speciality text-sm md:text-base font-bold mb-1">Dermatology
                                     <span
-                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-white opacity-75">WB12458655</span>
+                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-[var(--theme-alternate-text-col)] opacity-75">WB12458655</span>
                                 </p>
                                 <p class="degree text-sm md:text-base">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
                                 </p>
@@ -331,10 +448,12 @@
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
                             <button
-                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-3 pr-2 py-2 rounded-full text-xs md:text-bases"
+                                class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
                                 onclick="openModal('modelConfirm')">
-                                Book Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" />
-                            </button>
+                                Book Appointment 
+                                <!--  <img class=" fill-current text-[var(--theme-alternate-text-col)]"src="images/arrow_right-white.svg" alt="arrow-right" />-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                            </button> 
 
 
                         </div>
@@ -370,7 +489,7 @@
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
                             <button
-                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-3 pr-2 py-2 rounded-full text-xs md:text-bases"
+                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-3 pr-2 py-2 rounded-full text-sm md:text-base"
                                 onclick="openModal('modelConfirm')">
                                 Book Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" />
                             </button>
@@ -409,7 +528,7 @@
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
                             <button
-                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-3 pr-2 py-2 rounded-full text-xs md:text-bases"
+                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-3 pr-2 py-2 rounded-full text-xs md:text-base"
                                 onclick="openModal('modelConfirm')">
                                 Book Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" />
                             </button>
@@ -444,7 +563,7 @@
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
                             <a href="javascript:void(0);"
-                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full text-xs md:text-bases">Book
+                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full text-xs md:text-base">Book
                                 Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
                         </div>
                     </div>
@@ -467,7 +586,7 @@
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
                             <a href="javascript:void(0);"
-                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full text-xs md:text-bases">Book
+                                class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-4 pr-3 py-2 rounded-full text-xs md:text-base">Book
                                 Appointment <img src="images/arrow_right-white.svg" alt="arrow-right" /></a>
                         </div>
                     </div> -->
@@ -497,7 +616,7 @@
                                 <p><strong>7</strong> Days Open</p>
                             </div>
                             <a href="javascript:void(0);"
-                            class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-3 pr-2 py-2 rounded-full text-xs md:text-bases"
+                            class="bg-[var(--theme-col)] text-white flex items-center gap-2 pl-3 pr-2 py-2 rounded-full text-xs md:text-base"
                             onclick="openModal('modelConfirm')">
                                                             Contact<img
                                     src="images/arrow_right-white.svg" alt="arrow-right" /></a>
@@ -562,7 +681,7 @@
     </footer> -->
     <footer class="    dark:mx-1  text-slate-100	 sticky bottom-0">
         <div class="w-full  max-w-screen-xl flex justify-center	 items-center text-center bg-[var(--theme-col)] dark:bg-white ">
-        <span class=" text-center items-center text-xs text-slate-100 dark:text-gray-400 text-center">© 2023 <a href="#" class="hover:underline">TestIpsum</a>. All Rights Reserved.
+        <span class="  items-center text-xs text-[var(--theme-alternate-text-col)] dark:text-gray-400 text-center">© 2023 <a href="#" class="hover:underline">TestIpsum</a>. All Rights Reserved.
         </span>
         </div>
     </footer>
