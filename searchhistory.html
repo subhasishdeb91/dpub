@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <title>Your Page Title</title>
 
     <meta charset="UTF-8">
@@ -19,38 +17,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
-</head>
 
 <body>
     
-    <div class="h-screen w-screen m-0 p-0 bg-[#f1f0eb]"> 
+    <div class="h-screen w-screen m-0 p-0 bg-[var(--theme-bg-col)]"> 
         <div class="header-ad-banner ">
             <div class="slider-banner md:hidden">
-                <div class="owl-carousel owl-theme demo ">
-                            <div class="item   ">
-                                <div class=" items-center text-center bg-[url('images/HeaderAd.png')] text-[var(--topbar-text-color)]  ">
-                                    <span>For business querry contact 9999999999
-                                    </span>
-                                </div>  
-                            </div>
-                     <div class="item md:hidden">
-
-                        <img src="images/HeaderAd4.png" alt="Doctor" />
-                    </div>
+                <div class="owl-carousel owl-theme demo owl-loaded owl-drag">
+                            
+                     
                     <!--
                     <div class="item">
                         <img src="images/HeaderAd2.png" alt="Doctor" />
                     </div> -->
-                    </div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-375px, 0px, 0px); transition: 0.25s; width: 750px;"><div class="owl-item" style="width: 375px;"><div class="item   ">
+                                <div class=" items-center text-center bg-[url('images/HeaderAd.png')] text-[var(--topbar-text-color)]  ">
+                                    <span>For business querry contact 9999999999
+                                    </span>
+                                </div>  
+                            </div></div><div class="owl-item active" style="width: 375px;"><div class="item md:hidden">
+
+                        <img src="images/HeaderAd4.png" alt="Doctor">
+                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
             </div>
             <div class=" sm:hidden md:block items-center text-center bg-[var(--topbar-color)] text-[var(--topbar-text-color)]  ">
                 <span>For business querry contact 9999999999
@@ -61,9 +55,9 @@
         <div class="grid grid-cols-12 p-1 bg-[var(--theme-col)] sticky top-0 z-10 items-center ">
             <div class=" col-span-5 md:col-span-3 ">
                 <div class="container mx-auto px-3 text-left md:text-left ">
-                    <a href="./index2.html">
+                    <a href="./index.html">
 
-                    <div><a href="./index2.html">
+                    </a><div></a><a href="./index.html">
                         <img src="images/main-logo.svg" alt="avatar" class="header-logo w-28 sm:w-36 md:w-44 invert">
                     </a>
                     </div>
@@ -72,46 +66,7 @@
             <div class=" md:col-span-6 hidden md:block ">
                  <div class="searchBarPanel banner-content">
                     <div class="container  ">
-                        <!-- <div class="form_div ">
-                            <form class="grid grid-cols-2 gap-1">
-                                  <div class="search_bar text-xs md:text-base border border-solid border-gray-400 rounded-lg col-span-2" id="category-search-bar">
-                                    <div class="input_box text-sm md:text-base">
-                                        <div class="select  ">
-                                            <select id="categories" class="input custom-select bg-transparent">
-                                                <option selected="" value="All"></option>
-                                                <option value="Doctors">Doctors</option>
-                                                <option value="Paramedics">Paramedics</option>
-                                                <option value="Pharmacy">Pharmacy</option>
-                                                <option value="Pathology">Pathology</option>
-                                                <option value="Radiology">Radiology</option>
-                                            </select>
-                                        </div>
-                                        <div class="top-0 absolute flex items-center pointer-events-none text-[#9d9999]" style="display: flex;">
-                                            <div class="slider_box " i="">
-                                                <div class="slider text-base " id="placeholder_slider" style="opacity: 0; left: -5px;">Pharmacy</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search_bar search_bar_subcat location-search-bar  text-xs md:text-base col-span-1 pl-3 md:pl-3 border border-solid border-gray-400 bg-[url('images/search.svg')] bg-no-repeat bg-[4px_center] rounded-lg  hidden" id="subcategories" style="display: none;">
-                                    <div class="input_box text-sm md:text-base   ">
-                                        <div class="select pr-3">
-                                            <select id="speciality" class="input custom-select bg-transparent">
-                                                <option selected="" value="All">Select speciality</option>
-                                                <option value="Cardiology">Cardiology</option>
-                                                <option value="Nephrology">Nephrology</option>
-                                                <option value="Neurology">Neurology</option>
-                                            </select>
-                                        </div>
-                                        <div class=" -top-6 absolute flex items-center pointer-events-none text-[#9d9999]">
-                                            <div class="slider_box ">
-                                                <div class="slider text-base "></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </div>
-                            </form>
-                        </div> -->
+                        
                     </div>
         
         
@@ -169,7 +124,7 @@
                   </div>
               </aside> -->
 
-         <aside class="sidebar  z-5 ">
+         <aside class="sidebar z-5">
                     <div class="block-dom "></div>
                     <div class="sidebar-content   bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] w-1/2 md:w-1/3 lg:w-1/4">
 
@@ -259,7 +214,7 @@
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M17 20C15.1362 20 13.5701 18.7252 13.126 17H5V15H13.126C13.5701 13.2748 15.1362 12 17 12C19.2091 12 21 13.7909 21 16C21 18.2091 19.2091 20 17 20ZM17 18C18.1046 18 19 17.1046 19 16C19 14.8954 18.1046 14 17 14C15.8954 14 15 14.8954 15 16C15 17.1046 15.8954 18 17 18Z" fill="currentColor"></path>
                             </svg>
                           </span>
-                          <a target="_blank" >
+                          <a target="_blank">
                             <span class="ml-2">Notificatios</span>
                           </a>
                         </li>
@@ -277,19 +232,27 @@
         <div class="main-banner">
             <!-- slider start -->
             <div class="slider-banner">
-                <div class="owl-carousel owl-theme demo">
+                <div class="owl-carousel owl-theme demo owl-loaded owl-drag">
                     
-                    <div class="item">
-                        <img src="images/b1.png" alt="Doctor" />
-                    </div>
-                    <div class="item">
-                        <img src="images/b2.png" alt="Doctor" />
-                    </div>
-                    </div>
+                    
+                    
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1125px, 0px, 0px); transition: 0.25s; width: 2250px;"><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b1.png" alt="Doctor">
+                    </div></div><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b2.png" alt="Doctor">
+                    </div></div><div class="owl-item" style="width: 375px;"><div class="item">
+                        <img src="images/b1.png" alt="Doctor">
+                    </div></div><div class="owl-item active" style="width: 375px;"><div class="item">
+                        <img src="images/b2.png" alt="Doctor">
+                    </div></div><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b1.png" alt="Doctor">
+                    </div></div><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b2.png" alt="Doctor">
+                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
             </div>
             <!-- slider finish -->
         </div>
-        <div class=" searchBarPanel banner-content bg-[#d1c9c9]   sticky top-[35px] md:top-[48px] ">
+        <div class=" searchBarPanel banner-content bg-[var(--theme-search-bg-col)]   sticky top-[35px] md:top-[48px] ">
             <div class="container mx-auto px-1 py-1 md:py-2">
                 <div class="form_div ">
                     <form class="grid grid-cols-2 md:grid-cols-5 gap-1 md:gap-4 ">
@@ -298,11 +261,11 @@
                             <div class="md:col-span-1"></div>
                             <div class="col-span-2 md:col-span-3 grid grid-cols-2">
                                 <div class="search_bar   text-xs md:text-base col-span-2 pl-5 md:pl-5 border border-solid border-gray-400 bg-[url('images/search.svg')] bg-no-repeat bg-[6px_center] rounded-lg h-8 md:h-12" id="category-search-bar">
-                                    <div class="input_box text-sm md:text-base h-8 md:h-12 " >
+                                    <div class="input_box text-sm md:text-base h-8 md:h-12 ">
                                         <div class="select h-7 md:h-11 pr-3">
                                             <select id="categories" class="input custom-select bg-transparent">
                                                 <!-- <option selected value="All"></option> -->
-                                                <option selected value="All"></option>
+                                                <option selected="" value="All"></option>
                                                 <option value="Doctors">Doctors</option>
                                                 <option value="Paramedics">Paramedics</option>
                                                 <option value="Pharmacy">Pharmacy</option>
@@ -310,26 +273,24 @@
                                                 <option value="Radiology">Radiology</option>
                                             </select>
                                         </div>
-                                        <div
-                                            class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[#9d9999]">
-                                            <div class="slider_box " i>
-                                                <div class="slider text-base " id="placeholder_slider"></div>
+                                        <div class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[#9d9999]">
+                                            <div class="slider_box " i="">
+                                                <div class="slider text-base " id="placeholder_slider" style="opacity: 1; left: 0px;">Doctors</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                  <div class="search_bar search_bar_subcatcol-span-1 location-search-bar  text-xs md:text-base pl-5 md:pl-5 border border-solid border-gray-400 bg-[url('images/search.svg')] bg-no-repeat bg-[6px_center] rounded-lg h-8 md:h-12 hidden" id="subcategories">
-                                        <div class="input_box text-sm md:text-base h-8 md:h-12  " >
+                                        <div class="input_box text-sm md:text-base h-8 md:h-12  ">
                                             <div class="select h-7 md:h-11 pr-3">
                                                 <select id="speciality" class="input custom-select bg-transparent">
-                                                    <option selected value="All">Select speciality</option>
+                                                    <option selected="" value="All">Select speciality</option>
                                                     <option value="Cardiology">Cardiology</option>
                                                     <option value="Nephrology">Nephrology</option>
                                                     <option value="Neurology">Neurology</option>
                                                 </select>
                                             </div>
-                                            <div
-                                                class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[#9d9999]">
+                                            <div class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[#9d9999]">
                                                 <div class="slider_box ">
                                                     <div class="slider text-base "></div>
                                                 </div>
@@ -354,37 +315,37 @@
                     <div class="flex flex-row gap-1 justify-between w-full overflow-x-scroll snap-x p-1 border border-[var(--theme-col)] border-opacity-50 rounded-lg">
                         <a href="#">
                             <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
-                                <img src="images/smsl/smsl1.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                                <img src="images/smsl/smsl1.png" alt="Paramedics" class="rounded opacity-85 w-full">
                             </div>
                         </a>
                         <a href="#">
                             <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
-                                <img src="images/smsl/smsl2.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                                <img src="images/smsl/smsl2.png" alt="Paramedics" class="rounded opacity-85 w-full">
                             </div>
                         </a>
                         <a href="#">
                             <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
-                                <img src="images/smsl/smsl3.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                                <img src="images/smsl/smsl3.png" alt="Paramedics" class="rounded opacity-85 w-full">
                             </div>
                         </a>
                         <a href="#">
                             <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
-                                <img src="images/smsl/smsl4.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                                <img src="images/smsl/smsl4.png" alt="Paramedics" class="rounded opacity-85 w-full">
                             </div>
                         </a>
                         <a href="#">
                             <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
-                                <img src="images/smsl/smsl5.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                                <img src="images/smsl/smsl5.png" alt="Paramedics" class="rounded opacity-85 w-full">
                             </div>
                         </a>
                         <a href="#">
                             <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
-                                <img src="images/smsl/smsl6.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                                <img src="images/smsl/smsl6.png" alt="Paramedics" class="rounded opacity-85 w-full">
                             </div>
                         </a>
                         <a href="#">
                             <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
-                                <img src="images/smsl/smsl7.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                                <img src="images/smsl/smsl7.png" alt="Paramedics" class="rounded opacity-85 w-full">
                             </div>
                         </a>
                         
@@ -429,7 +390,7 @@
                                     </ol>
                                 </nav>
   
-                                <div class="flex gap-1"><button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c2bcbc" version="1.1" id="Capa_1" viewBox="-48.24 -48.24 578.91 578.91" xml:space="preserve" stroke="#c2bcbc" stroke-width="0.00482428" class="w-5 md:w-6">
+                                <div class="flex gap-1"><button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="var(--theme-alternate-text-col)" version="1.1" id="Capa_1" viewBox="-48.24 -48.24 578.91 578.91" xml:space="preserve" stroke="#c2bcbc" stroke-width="0.00482428" class="w-5 md:w-6">
 
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     
@@ -464,7 +425,7 @@
                                     </ol>
                                 </nav>
   
-                                <div class="flex gap-1"><button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#c2bcbc" version="1.1" id="Capa_1" width="20px" height="20px" viewBox="-48.24 -48.24 578.91 578.91" xml:space="preserve" stroke="#c2bcbc" stroke-width="0.00482428">
+                                <div class="flex gap-1"><button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="var(--theme-alternate-text-col)" version="1.1" id="Capa_1" width="20px" height="20px" viewBox="-48.24 -48.24 578.91 578.91" xml:space="preserve" stroke="#c2bcbc" stroke-width="0.00482428">
 
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     
@@ -515,13 +476,13 @@
     <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-[var(--theme-col)]   h-11/12 w-11/12 md:w-9/12 lg:w-1/2 lg:max-w-2xl ">
         <div class="flex justify-between items-center mb-6 ">
             <h3 class="text-xl font-bold text-gray-800">Contact Us</h3>
-            <button id="close-contact-modal" class="text-gray-600 hover:text-gray-900 text-2xl">&times;</button>
+            <button id="close-contact-modal" class="text-gray-600 hover:text-gray-900 text-2xl">×</button>
         </div>
         <form id="contact-form" class="space-y-4">
             <!-- Contact Category -->
             <div>
                 <label for="contact-category" class="block text-gray-700 font-medium mb-2">Contact Category:</label>
-                <select id="contact-category" name="category" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+                <select id="contact-category" name="category" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required="">
                     <option value="">Select a category</option>
                     <option value="general">General Inquiry</option>
                     <option value="support">Support</option>
@@ -532,25 +493,25 @@
             <!-- Name -->
             <div>
                 <label for="name" class="block text-gray-700 font-medium mb-2">Your Name:</label>
-                <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+                <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required="">
                 <span class="text-red-500 text-sm hidden" id="name-error">Please enter your name</span>
             </div>
             <!-- Contact Number -->
             <div>
                 <label for="contact-number" class="block text-gray-700 font-medium mb-2">Contact Number:</label>
-                <input type="tel" id="contact-number" name="contact_number" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" pattern="^\d{10}$" required>
+                <input type="tel" id="contact-number" name="contact_number" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" pattern="^\d{10}$" required="">
                 <span class="text-red-500 text-sm hidden" id="contact-error">Please enter a valid 10-digit phone number</span>
             </div>
             <!-- Email -->
             <div>
                 <label for="email" class="block text-gray-700 font-medium mb-2">Your Email:</label>
-                <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+                <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required="">
                 <span class="text-red-500 text-sm hidden" id="email-error">Please enter a valid email</span>
             </div>
             <!-- Matter -->
             <div>
                 <label for="matter" class="block text-gray-700 font-medium mb-2">Matter:</label>
-                <textarea id="matter" name="matter" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required></textarea>
+                <textarea id="matter" name="matter" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required=""></textarea>
                 <span class="text-red-500 text-sm hidden" id="matter-error">Please describe your matter</span>
             </div>
             <!-- Submit Button -->
@@ -561,7 +522,7 @@
     </div>
 </div>
 
-</div>
-</body>
 
-</html>
+
+
+</body></html>

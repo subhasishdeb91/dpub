@@ -91,6 +91,7 @@ $(document).ready(function () {
             cat_select_box.classList.remove("col-span-1");
         }
         });
+
     document.getElementById('subcategories').addEventListener('change', function() {
         $("html, body").animate({ scrollTop:0 }, "slow");
         });
@@ -179,5 +180,3 @@ $(document).ready(function () {
     
 
 });
-
-
