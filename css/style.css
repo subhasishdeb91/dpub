@@ -1,12 +1,17 @@
 :root {
   --theme-col: #923000 ;
+  --theme-col-gr-light: #cd5700 ;
   --theme-alternate-text-col: #f6ebe5 ;
-  /* --theme-col: #923000 ; */
+  /* --theme-bg-col: #f1f0eb ; */
+  --theme-search-bg-col: #78f859 ;
   --sponsor-col: #f7ddd0; 
   --sponsor-text-col: #070403;
   --topbar-color : #fffaaa; 
   --topbar-text-color : #923000; 
   --text-col:#000000;
+  --text-grey:#9d9999;
+  --main-bg:#ec2323;
+  /* --main-bg:#f1f0eb; */
   
 
     }
