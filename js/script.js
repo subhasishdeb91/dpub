@@ -52,8 +52,11 @@ $(document).ready(function () {
 
 
     showSideBar.addEventListener("click", () => sidebar.classList.toggle("show"));
+    showSideBar.addEventListener("click", () => document.getElementsByTagName('body')[0].classList.toggle('overflow-y-hidden'));
+
     blockDom.addEventListener("click", () => sidebar.classList.remove("show"));
     blockDom.addEventListener("click", () => navIcon.classList.remove("open"));
+    blockDom.addEventListener("click", () => document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden'));
 
 
       
