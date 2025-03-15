@@ -11,4 +11,14 @@ module.exports = {
       },
     },
   }
+
+  module.exports = {
+    theme: {
+      extend: {
+        screens: {
+          'tall': { 'raw': '(min-height: 500px)' },
+        },
+      },
+    },
+  }
   

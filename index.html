@@ -6,16 +6,16 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="theme-color" content="var(--theme-col)"> -->
+    <!-- <meta name="theme-color" content="var(--primary)"> -->
     <meta name="description" content="Your page description">
     <meta name="keywords" content="keyword1, keyword2, keyword3">
     <meta name="copyright" content="Copyright 2023 Your Company">
 
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <!-- <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"> -->
 
 
 
-    <title>medisynk</title>
+    <title>test</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
@@ -28,11 +28,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/tailwind.config.js"></script>
 </head>
 
 <body>
     
-    <div class="h-screen w-screen m-0 p-0 bg-[var(--main-bg)] "> 
+    <div class="h-screen w-screen m-0 p-0 bg-[var(--bg)] text-[var(--text-col)] "> 
         <!-- <div class="header-ad-banner ">
             <div class="slider-banner md:hidden">
                 <div class="owl-carousel owl-theme demo ">
@@ -53,7 +54,7 @@
             </div>
         </div> -->
        
-        <div class="grid grid-cols-12 p-1 bg-[var(--theme-col)] sticky top-0 z-10 items-center ">
+        <div class="grid grid-cols-12 p-1 bg-[var(--primary)] sticky top-0 z-10 items-center ">
             <div class=" col-span-5 md:col-span-3 ">
                 <div class="container mx-auto px-3 text-left md:text-left ">
                     <div>                         <a href="./index.html">
@@ -74,7 +75,7 @@
             <div class="pl-2 col-span-6 md:col-span-2 ">
                 
                 <div id="location">
-                    <div class="  text-[var(--theme-alternate-text-col)]  text-xs md:text-sm lg:text-base">
+                    <div class="  text-[var(--primaryText)]  text-xs md:text-sm lg:text-base">
                         <div class="select flex items-center ">
                             <select id="location" class="input custom-select bg-transparent  text-right ">
                                 <option selected="" value="All">Select Location</option>
@@ -82,8 +83,15 @@
                                 <option value="Location2">Location2</option>
                                 <option value="Location3">Location3</option>
                             </select>
-                            <img src="images/location.svg">
-    
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="140 30 350 480" style="enable-background:new 0 0 600 600;" xml:space="preserve" class="h-6 w-6">
+                                        
+                                <g id="objects">
+                                       <g>
+                                            <path style="fill:var(--primaryText);" d="M451.468,224.107c-2.216,127.548-96.026,221.803-134.877,255.438     c-9.537,8.257-23.672,8.222-33.208-0.036c-39.342-34.07-134.875-130.168-134.875-260.002c0-83.59,67.701-151.371,151.261-151.5     C384.989,67.876,452.949,138.9,451.468,224.107z"></path>
+                                            <circle style="fill:var(--primary);" cx="300.008" cy="218.507" r="108.5"></circle>
+                                        </g>
+                                </g>
+                                </svg>    
                         </div>
                     </div>
                 </div>
@@ -91,7 +99,7 @@
            
             <div class="flex col-span-1 justify-end ">
     
-                <button type="button" class=" text-[var(--theme-alternate-text-col)] btn btn-orange show-sidebar relative z-50 ">
+                <button type="button" class=" text-[var(--primaryText)] btn btn-orange show-sidebar relative z-50 ">
                   <div class="nav-icon w-6 md:w-8 lg:w-10 h-6" id="nav-icon">
                       <span></span>
                       <span></span>
@@ -107,113 +115,149 @@
            
      <aside class="sidebar  z-5 ">
         <div class="block-dom "></div>
-        <div class="sidebar-content   bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] w-1/2 md:w-1/3 lg:w-1/4">
+        <div class="sidebar-content   bg-[var(--primary)] text-[var(--primaryText)] w-1/2 md:w-1/3 lg:w-1/4">
 
-     <nav class="flex flex-col bg-[var(--theme-col)] h-screen tex-gray-900 border border-[var(--theme-col)]">
-        <div class="block flex-wrap mt-8 items-center justify-center self-center text-center">
-            <div class="">
-              <img src="images/avatar1.jpg" class="mx-auto  rounded-full w-1/2 md:w-1/3">
-            </div>
-            <div class="">
-              <span class="font-semibold">Anonymus user</span>
-              <div class="">
-              <span class="text-xs">Default location</span>
-              <select id="location" class="input custom-select bg-transparent  text-center text-sm ">
-                  <option selected="" value="All">Select Location</option>
-                  <option value="Location1">Location1</option>
-                  <option value="Location2">Location2</option>
-                  <option value="Location3">Location3</option>
-              </select>
-              </div>
-              
-              <!-- <button class="bg-green-500 text-white px-4 py-2 rounded-md border border-blue-500 hover:bg-white hover:text-green-500">
-                Premium
-              </button> -->
-            </div>
-          </div>
-          <div class="mt-10 pb-8 ">
-            <ul class=" p-2">
-              <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
-                  <span>
-                    <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="currentColor"></path>
-                      <path d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z" fill="currentColor"></path>
-                    </svg>
-                  </span>
-                  <a target="_blank">
-                   
-                    <span class="ml-2">Account</span>
-                  </a>
-              </li>
-              <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
-                  <span>
-                      <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C11.85 18 13.55 17.37 14.9 16.31L19.59 21L21 19.59L16.31 14.9C17.37 13.55 18 11.85 18 10C18 5.58 14.42 2 10 2ZM10 4C13.32 4 16 6.68 16 10C16 13.32 13.32 16 10 16C6.68 16 4 13.32 4 10C4 6.68 6.68 4 10 4Z" fill="currentColor"/>
-                          <path d="M11 6V10.59L13.71 13.29L14.71 12.29L12 9.59V6H11Z" fill="currentColor"/>
-                        </svg>
-                  </span>
-                  <a href="./searchhistory.html" target="_self">
-                    <span class="ml-2">Search History</span>
-                  </a>
-                </li>
-              <li class="mb-2 py-1 flex flex-row  border-gray-300 ">
-                <span>
-                  <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="currentColor"/>
-                    </svg>
-                </span>
-                <a target="_blank">
-                  <span class="ml-2 " onclick="openModal('modelConfirm2')" >Contact Us</span>
-                </a>
-              </li>
-              
-              
-              <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
-                <span>
-                  <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <!-- User Profile -->
-                      <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
-                      <!-- Information Circle -->
-                      <path d="M13 9H11V7H13V9ZM13 17H11V11H13V17Z" fill="currentColor"/>
-                    </svg>
-                </span>
-                <a target="_blank">
-                 
-                  <span class="ml-2">About Us</span>
-                </a>
-              </li>
-             
-              
-              <li class="mb-2 py-1 flex flex-row  border-gray-300 blur-sm ">
-                <span>
-                  <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3C8.86384 3 10.4299 4.27477 10.874 6H19V8H10.874C10.4299 9.72523 8.86384 11 7 11C4.79086 11 3 9.20914 3 7C3 4.79086 4.79086 3 7 3ZM7 9C8.10457 9 9 8.10457 9 7C9 5.89543 8.10457 5 7 5C5.89543 5 5 5.89543 5 7C5 8.10457 5.89543 9 7 9Z" fill="currentColor"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 20C15.1362 20 13.5701 18.7252 13.126 17H5V15H13.126C13.5701 13.2748 15.1362 12 17 12C19.2091 12 21 13.7909 21 16C21 18.2091 19.2091 20 17 20ZM17 18C18.1046 18 19 17.1046 19 16C19 14.8954 18.1046 14 17 14C15.8954 14 15 14.8954 15 16C15 17.1046 15.8954 18 17 18Z" fill="currentColor"></path>
-                  </svg>
-                </span>
-                <a target="_blank" >
-                  <span class="ml-2">Notificatios</span>
-                </a>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="fixed bottom-0 w-1/2 md:w-1/3 lg:w-1/4">
-            <div class="flex flex-col items-center p-1 bg-[var(--theme-col)] bottom-0">
-                <div class="w-5/6">
-
-                  <div class="w-full h-px bg-white"></div>
-                </div>
-                <span class="text-sm flex items-center w-full justify-center p-1">
-                  Made with
-                  <svg class="fill-current h-4 w-4 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"></path>
-                  </svg>
-                  in India
-                </span>
-              </div>
-          </div>
-      </nav>
+            <nav class="flex flex-col bg-[var(--primary)] h-screen tex-gray-900 border border-[var(--primary)]">
+                <div class="block flex-wrap mt-8 items-center justify-center self-center text-center">
+                    <div class="">
+                      <img src="images/avatar1.jpg" class="mx-auto  rounded-full w-1/2 md:w-1/3">
+                    </div>
+                    <div class="">
+                      <span class="font-semibold">Anonymus user</span>
+                      <div class="">
+                      <span class="text-xs">Default location</span>
+                      <select id="location" class="input custom-select bg-transparent  text-center text-sm ">
+                          <option selected="" value="All">Select Location</option>
+                          <option value="Location1">Location1</option>
+                          <option value="Location2">Location2</option>
+                          <option value="Location3">Location3</option>
+                      </select>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="mt-10 pb-8 ">
+                    <ul class=" p-2">
+                      <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
+                          <span>
+                            <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="currentColor"></path>
+                              <path d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z" fill="currentColor"></path>
+                            </svg>
+                          </span>
+                          <a target="_blank">
+                           
+                            <span class="ml-2">Account</span>
+                          </a>
+                      </li>
+                      <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
+                          <span>
+                              <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C11.85 18 13.55 17.37 14.9 16.31L19.59 21L21 19.59L16.31 14.9C17.37 13.55 18 11.85 18 10C18 5.58 14.42 2 10 2ZM10 4C13.32 4 16 6.68 16 10C16 13.32 13.32 16 10 16C6.68 16 4 13.32 4 10C4 6.68 6.68 4 10 4Z" fill="currentColor"></path>
+                                  <path d="M11 6V10.59L13.71 13.29L14.71 12.29L12 9.59V6H11Z" fill="currentColor"></path>
+                                </svg>
+                          </span>
+                          <a href="./searchhistory.html" target="_self">
+                            <span class="ml-2">Search History</span>
+                          </a>
+                        </li>
+                      <li class="mb-2 py-1 flex flex-row  border-gray-300 ">
+                        <span>
+                          <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <a target="_blank">
+                          <span class="ml-2 " onclick="openModal('modelConfirm2')">Contact Us</span>
+                        </a>
+                      </li>
+                      
+                      
+                      <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
+                        <span>
+                          <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <!-- User Profile -->
+                              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"></path>
+                              <!-- Information Circle -->
+                              <path d="M13 9H11V7H13V9ZM13 17H11V11H13V17Z" fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <a target="_blank">
+                         
+                          <span class="ml-2">About Us</span>
+                        </a>
+                      </li>
+                     
+                      
+                      <li class="mb-2 py-1 flex flex-row  border-gray-300 blur-sm ">
+                        <span>
+                          <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3C8.86384 3 10.4299 4.27477 10.874 6H19V8H10.874C10.4299 9.72523 8.86384 11 7 11C4.79086 11 3 9.20914 3 7C3 4.79086 4.79086 3 7 3ZM7 9C8.10457 9 9 8.10457 9 7C9 5.89543 8.10457 5 7 5C5.89543 5 5 5.89543 5 7C5 8.10457 5.89543 9 7 9Z" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 20C15.1362 20 13.5701 18.7252 13.126 17H5V15H13.126C13.5701 13.2748 15.1362 12 17 12C19.2091 12 21 13.7909 21 16C21 18.2091 19.2091 20 17 20ZM17 18C18.1046 18 19 17.1046 19 16C19 14.8954 18.1046 14 17 14C15.8954 14 15 14.8954 15 16C15 17.1046 15.8954 18 17 18Z" fill="currentColor"></path>
+                          </svg>
+                        </span>
+                        <a target="_blank">
+                          <span class="ml-2">Notificatios</span>
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div class="fixed bottom-0 w-1/2 md:w-1/3 lg:w-1/4">
+                    <div class="flex flex-col items-center p-1 bg-[var(--primary)] bottom-0">
+                      <a href="mailto:“abc@mailinator.com&quot;" class="w-full flex mb-1 items-center justify-center">  <div class="bg-[var(--primaryText)] h-6 w-6 rounded-full flex items-center justify-center shrink-0 mr-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="var(--primary)" viewBox="0 0 479.058 479.058">
+                                        <path d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" data-original="#000000"></path>
+                                    </svg>
+                                </div>
+                                
+                                <span class="text-sm">info@medisynk.in
+                                </span>
+                      </a>
+        <div class="w-5/6">        
+                          <div class="w-full h-px bg-[var(--bg-card)]"></div>
+                        </div>
+        
+        
+                         <ul class="flex my-1 space-x-2">
+                            <li class="bg-[var(--primaryText)] h-6 w-6 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="var(--primary)" viewBox="0 0 24 24">
+                                        <path d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z" data-original="#000000"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="bg-[var(--primaryText)] h-6 w-6 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="var(--primary)" viewBox="0 0 511 512">
+                                        <path d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0" data-original="#000000"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="bg-[var(--primaryText)] h-6 w-6 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="var(--primary)" viewBox="0 0 24 24">
+                                        <path d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+        <div class="w-5/6">
+        
+                          <div class="w-full h-px bg-[var(--bg-card)]"></div>
+                        </div>
+                        <span class="text-sm flex items-center w-full justify-center p-1">
+                          Made with
+                          <svg class="fill-current h-4 w-4 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"></path>
+                          </svg>
+                          in India
+                        </span>
+                      </div>
+                  </div>
+              </nav>
       </div>
  </aside>
       </div>
@@ -233,7 +277,7 @@
             </div>
             <!-- slider finish -->
         </div>
-        <div class=" searchBarPanel banner-content bg-[var(--theme-search-bg-col)]   sticky top-[35px] md:top-[48px] ">
+        <div class=" searchBarPanel banner-content bg-[var(--)]   sticky top-[35px] md:top-[48px] ">
             <div class="container mx-auto px-1 py-1 md:py-2">
                 <div class="form_div ">
                     <form class="grid grid-cols-2 md:grid-cols-5 gap-1 md:gap-4 ">
@@ -255,7 +299,7 @@
                                             </select>
                                         </div>
                                         <div
-                                            class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[var(--text-grey)]">
+                                            class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[var-(--text-grey)]">
                                             <div class="slider_box " i>
                                                 <div class="slider text-base " id="placeholder_slider"></div>
                                             </div>
@@ -273,7 +317,7 @@
                                                 </select>
                                             </div>
                                             <div
-                                                class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[var(--text-grey)]">
+                                                class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[var-(--text-grey)]">
                                                 <div class="slider_box ">
                                                     <div class="slider text-base "></div>
                                                 </div>
@@ -290,81 +334,91 @@
 
         </div>
 
-    <div class="main-content-area mt-0 bg-[var(--main-bg)]">
+    <div class="main-content-area mt-0 bg-[var-(--bg)]">
         <!-- small list slider -->
-        <div class="container mx-auto">
-            <div class="what-you-want ">
-                <div class=" px-2 flex flex-row gap-1 justify-between w-full overflow-x-auto snap-x p-1 border border-[var(--theme-col)] border-opacity-50 rounded-lg">
+        <div class="container mx-auto pl-1">
+                <div class=" noslider px-2 flex flex-row gap-1 justify-between w-full overflow-x-scroll snap-x p-1 border border-[var(--primary)] border-opacity-50 rounded-lg">
                     <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                        <div class="box-medical shadow-lg  rounded-lg w-16 snap-start sm:w-fit">
                             <img src="images/smsl/smsl1.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
                             <img src="images/smsl/smsl2.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
                             <img src="images/smsl/smsl3.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
                             <img src="images/smsl/smsl4.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
                             <img src="images/smsl/smsl5.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                        <div class="box-medical shadow-l rounded-lg w-16 snap-start sm:w-fit">
                             <img src="images/smsl/smsl6.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     <a href="#">
-                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit">
                             <img src="images/smsl/smsl7.png" alt="Paramedics" class="rounded opacity-85 w-full" />
                         </div>
                     </a>
                     
 
                 </div>
-            </div>
         </div>
 
+ 
         <!-- Doctor setion -->
         <div class="doctors-card mt-0  py-2 md:py-4">
             <div class="container mx-auto px-1 pb-3">
-                <h1 class="text-center sm:text-base md:text-2xl mb-1 md:mb-10"><strong>24</strong> Listing found in your location</h1>
+                <h1 class="text-center sm:text-base md:text-2xl mb-1 md:mb-10 text-[var(--primaryText)]"><strong>24</strong> Listing found in your location</h1>
+                
+                
+                 <!-- Filter Component (Responsive) -->
+                 <div class="filter-component py-2">
+                    <!-- Filter Container -->
+                    <div class="noslider filter-container  flex sm:justify-center overflow-x-auto scrollbar-1px whitespace-nowrap md:overflow-x-hidden px-1 mx-auto">
+                    <!-- Filter Items -->
+                    <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">All</button>
+                    <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">10 + Experience</button>
+                    <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">Male Doctors</button>
+                    <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">Female Doctors</button>
+                    </div>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+                    
+                    
                     <!-- Doctors Listing -->
-                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-[var(--bg-card)] ">
                         <div class="flex">
 
 
-                            <div
-                                class="exp absolute z-2   w-24  text-[var(--theme-alternate-text-col)] text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                            <div class="exp absolute z-2   w-24  text-[var(--text-grey)] text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
                                 <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
                             </div>
-                            <div
-                                class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
+                            <div class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
                                 Ad
                             </div>
                         </div>
 
 
                         <div class="doc-portfolio flex gap-2 md:gap-4">
-                            <img src="images/doc.jpg" alt="Doctor"
-                                class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center">
                             <div class="doc-details">
-                                <h4 class="title text-base  mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</h4>
+                                <p class="title text-base font-bold mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</p>
                                 <p class="speciality text-sm md:text-base font-bold mb-1">Dermatology
-                                    <span
-                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-[var(--theme-alternate-text-col)] opacity-75">WB12458655</span>
+                                    <span class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--primary)] rounded-full px-2 py-1 text-[var(--primaryText)] opacity-75">WB12458655</span>
                                 </p>
                                 <p class="degree text-sm md:text-base">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
                                 </p>
@@ -375,36 +429,32 @@
                         <div class="doc-book flex justify-between mt-3 items-center">
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
-                            <button
-                                class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
-                                onclick="openModal('modelConfirm')">
+                            <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="openModal('modelConfirm')">
                                 Book Appointment 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                             </button> 
 
 
                         </div>
-                    </div>
-                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                    </div><div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-[var(--bg-card)] ">
                         <div class="flex">
 
 
-                        
-                            <div
-                                class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
+                            <div class="exp absolute z-2   w-24  text-[var(--text-grey)] text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                                <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
+                            </div>
+                            <div class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
                                 Ad
                             </div>
                         </div>
 
 
                         <div class="doc-portfolio flex gap-2 md:gap-4">
-                            <img src="images/doc.jpg" alt="Doctor"
-                                class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center">
                             <div class="doc-details">
-                                <h4 class="title text-base  mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</h4>
+                                <p class="title text-base font-bold mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</p>
                                 <p class="speciality text-sm md:text-base font-bold mb-1">Dermatology
-                                    <span
-                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-white opacity-75">WB12458655</span>
+                                    <span class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--primary)] rounded-full px-2 py-1 text-[var(--primaryText)] opacity-75">WB12458655</span>
                                 </p>
                                 <p class="degree text-sm md:text-base">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
                                 </p>
@@ -415,36 +465,31 @@
                         <div class="doc-book flex justify-between mt-3 items-center">
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
-                                <button
-                                class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
-                                onclick="openModal('modelConfirm')">
+                            <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="openModal('modelConfirm')">
                                 Book Appointment 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                             </button> 
 
 
                         </div>
                     </div>
-                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-[var(--bg-card)] ">
                         <div class="flex">
 
 
-                            <div
-                                class="exp absolute z-2   w-24  text-white text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                            <div class="exp absolute z-2   w-24  text-[var(--text-grey)] text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
                                 <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
                             </div>
-                           
+                            
                         </div>
 
 
                         <div class="doc-portfolio flex gap-2 md:gap-4">
-                            <img src="images/doc.jpg" alt="Doctor"
-                                class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center">
                             <div class="doc-details">
-                                <h4 class="title text-base  mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</h4>
+                                <p class="title text-base font-bold mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</p>
                                 <p class="speciality text-sm md:text-base font-bold mb-1">Dermatology
-                                    <span
-                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-white opacity-75">WB12458655</span>
+                                    <span class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--primary)] rounded-full px-2 py-1 text-[var(--primaryText)] opacity-75">WB12458655</span>
                                 </p>
                                 <p class="degree text-sm md:text-base">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
                                 </p>
@@ -455,30 +500,37 @@
                         <div class="doc-book flex justify-between mt-3 items-center">
                             <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
                                 Sat, Sun, Mon, Tues</p>
-                                <button
-                                class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
-                                onclick="openModal('modelConfirm')">
+                            <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="openModal('modelConfirm')">
                                 Book Appointment 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                             </button> 
 
 
                         </div>
                     </div>
                     
+                    
                     <!-- Medical Store Listing -->
 
                     <div
-                        class="medical-hall shadow-lg border border-gray-300 rounded-lg p-1 md:p-4 w-full relative bg-white">
+                        class="medical-hall shadow-lg border border-gray-300 rounded-lg p-1 md:p-4 w-full relative bg-[var(--bg-card)]">
                         <a href="./store.html" class="block">
 
                         <div class="medical-portfolio flex gap-2">
                             <img src="images/mstore.jpg" alt="Doctor"
                             class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
                             <div class="medical-details">
-                                <h4 class="title text-base  mb-1 ">John Medical Store</h4>
+                                <p class="title text-base font-bold">John Medical Store</p>
                                 <div class="flex">
-                                    <img src="images/location.svg" class="object-cover h-6 w-6 " />
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="140 30 350 480" style="enable-background:new 0 0 600 600;" xml:space="preserve" class="h-6 w-6">
+                                        
+                                        <g id="objects">
+                                               <g>
+                                                    <path style="fill:var(--text-col);" d="M451.468,224.107c-2.216,127.548-96.026,221.803-134.877,255.438     c-9.537,8.257-23.672,8.222-33.208-0.036c-39.342-34.07-134.875-130.168-134.875-260.002c0-83.59,67.701-151.371,151.261-151.5     C384.989,67.876,452.949,138.9,451.468,224.107z"></path>
+                                                    <circle style="fill:var(--bg-card);" cx="300.008" cy="218.507" r="108.5"></circle>
+                                                </g>
+                                        </g>
+                                        </svg>
                                     <p class="address text-base mb-1 px-1">Ns Road, kolkata</p>
                                 </div>
                                 <p class="store"></p>
@@ -494,10 +546,10 @@
                             </div>
                         
                                     <button
-                                    class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
+                                    class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
                                     onclick="">
                                     View Details 
-                                    <svg class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                                    <svg class="w-5 md:w-6" fill=var(--primaryText) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
                                 </button> 
                         </div>
                         </a>
@@ -507,7 +559,7 @@
                     <!-- Ambulance -->
 
                     <div
-                        class="medical-hall shadow-lg border border-gray-300 rounded-lg p-1 md:p-4 w-full relative bg-white">
+                        class="medical-hall shadow-lg border border-gray-300 rounded-lg p-1 md:p-4 w-full relative bg-[var(--bg-card)]">
                         <div
                         class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
                         Ad
@@ -516,7 +568,7 @@
                             <img src="images/ambulance.webp" alt="Doctor"
                             class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
                             <div class="medical-details">
-                                <h4 class="title text-base mb-1">Star Ambulance Service</h4>
+                                <p class="title text-base font-bold ">Star Ambulance Service</p>
                                 <div class="flex">
                                     <p class="address text-base mb-1">Ns Road, kolkata</p>
                                 </div>
@@ -532,21 +584,21 @@
                                 <p><strong>7</strong> Days Open</p>
                             </div>
                             <button
-                                    class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
+                                    class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
                                     onclick="">
                                     Contact 
-                                    <svg class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                                    <svg class="w-5 md:w-6" fill=var(--primaryText) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
                                 </button> 
                         </div>
                     </div>
                    <!-- Ambulance -->
 
                     <!-- Paramedic -->
-                        <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                        <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-[var(--bg-card)] ">
                             <div class="flex">
 
 
-                                <div class="exp absolute z-2   w-24  text-white text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                                <div class="exp absolute z-2   w-24  text-[var(--text-grey)] text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
                                     <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
                                 </div>
                             
@@ -556,7 +608,7 @@
                             <div class="doc-portfolio flex gap-2 md:gap-4">
                                 <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center">
                                 <div class="doc-details">
-                                    <h4 class="title text-base  mb-1 mr-10 md:mr-16"> John Doe </h4>
+                                    <p class="title text-base font-bold mb-1 mr-10 md:mr-16 "> John Doe </p>
                                     <p class="speciality text-sm md:text-base font-bold mb-1">Paramedic
                                     </p>
 
@@ -568,9 +620,9 @@
                             </div>
                             <div class="doc-book flex justify-between mt-3 items-center">
                                 <p class="text-sm md:text-base"><strong>Fees:</strong> 200.00 + <br></p>
-                                    <button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="openModal('')">
+                                    <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="openModal('')">
                                     Contact 
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill="var(--theme-alternate-text-col)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                                 </button> 
 
 
@@ -592,7 +644,7 @@
     
    
     <footer class="fixed w-full bottom-0">
-        <div class="w-full flex justify-center items-center text-center bg-[var(--theme-col)] ">
+        <div class="w-full flex justify-center items-center text-center bg-[var(--primary)] ">
         <span class=" items-center text-xs text-slate-100 text-center">© 2023 <a href="#" class="hover:underline">TestIpsum</a>. All Rights Reserved.
         </span>
         </div>
@@ -603,12 +655,12 @@
     <!-- Main modal -->
    
     <!--Modal-->
-    <div id="modelConfirm" class=" backdrop-blur-sm hidden bg-gray-100 bg-opacity-75 justify-center items-center overflow-y-auto  overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50 ">
-        <div class="modal-box shadow-xl shadow-black-500 flex flex-col border-2 border-[var(--theme-col)] gap-2 w-11/12 md:w-9/12 lg:w-1/2 lg:max-w-2xl bg-[var(--main-bg)] px-2 pb-2 rounded-lg max-h-[620px] overflow-auto overscroll-none">
+    <div id="modelConfirm" class="backdrop-blur-sm hidden bg-gray-100 bg-opacity-75 justify-center items-center overflow-y-auto  overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50 ">
+        <div class="modal-box shadow-xl shadow-black-500 flex flex-col border-2 border-[var(--primary)] gap-2 w-11/12 md:w-1/2 lg:max-w-2xl bg-[var(--bg)] px-2 pb-2 rounded-lg max-h-[90vh] overflow-y-auto relative">
 
-            <div class="flex bg-[var(--main-bg)] z-50  sticky top-0 py-2">
-                <div class="w-full">
-                    <h4 class="text-center">Dr. John Doe</h4>
+            <div class="flex bg-[var(--bg)] z-50  sticky top-0 py-2">
+                <div class="w-full text-[var(--primaryText)]">
+                    <p class="title text-base md:text-lg font-bold text-center text-[var(--primaryText)]">Dr. John Doe</p>
                     <p class="degree text-sm md:text-base text-center">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
                     </p>
 
@@ -623,16 +675,23 @@
             </div>
 
             <div class="modal-body z-40 grid grid-cols-1 gap-2">
-                <div class="medical-hall bg-[white] shadow-lg border border-gray-300 rounded-lg p-1 w-full relative ">
+                <div class="medical-hall bg-[var(--bg-card)] shadow-lg border border-gray-300 rounded-lg p-1 w-full relative ">
                     <div class="medical-portfolio flex gap-2">
                         <img src="images/mstore.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-40 md:h-40  object-cover object-center border border-gray-300">
                         <div class="medical-details">
-                            <h4 class="text-lg mb-1">John Medical Store</h4>
+                            <p class="title text-base font-bold">John Medical Store</p>
                             <div class="flex mb-1">
                                 <!-- <img src="images/location.png" class="object-cover h-6 w-6 "/> -->
-                                <img src="images/location.svg" class=" text-white flex items-center  rounded-full" alt="location">
-                                <p class="address font-medium ">Ns Road, kolkata</p>
-                                <!-- <a href="javascript:void(0);" class=" text-white flex items-center gap-1 pb-1  rounded-full"><img src="images/location.svg" alt="arrow-right"></a> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="140 30 350 480" style="enable-background:new 0 0 600 600;" xml:space="preserve" class="h-6 w-6">
+                                        
+                                    <g id="objects">
+                                           <g>
+                                                <path style="fill:var(--text-col);" d="M451.468,224.107c-2.216,127.548-96.026,221.803-134.877,255.438     c-9.537,8.257-23.672,8.222-33.208-0.036c-39.342-34.07-134.875-130.168-134.875-260.002c0-83.59,67.701-151.371,151.261-151.5     C384.989,67.876,452.949,138.9,451.468,224.107z"></path>
+                                                <circle style="fill:var(--bg-card);" cx="300.008" cy="218.507" r="108.5"></circle>
+                                            </g>
+                                    </g>
+                                    </svg>                                <p class="address font-medium ">Ns Road, kolkata</p>
+                                <!-- <a href="javascript:void(0);" class=" text-[var-(--primaryText)] flex items-center gap-1 pb-1  rounded-full"><img src="images/location.svg" alt="arrow-right"></a> -->
                             </div>
                             <div>
                                 <p class="store">Store <strong>7</strong> Days Open</p>
@@ -652,22 +711,29 @@
                             </p>
     
                         </div>
-                        <button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
+                        <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
                                         Contact 
-                                        <svg class="w-5 md:w-6" fill="var(--theme-alternate-text-col)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
+                                        <svg class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                                     </button> 
                     </div>
                 </div>
-                <div class="medical-hall bg-[white] shadow-lg border border-gray-300 rounded-lg p-1 w-full relative">
+                <div class="medical-hall bg-[var(--bg-card)] shadow-lg border border-gray-300 rounded-lg p-1 w-full relative">
                     <div class="medical-portfolio flex gap-2">
                         <img src="images/mstore.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-40 md:h-40  object-cover object-center border border-gray-300">
                         <div class="medical-details">
-                            <h4 class="text-lg mb-1">John Medical Store</h4>
+                            <p class="title text-base font-bold">John Medical Store</p>
                             <div class="flex mb-1">
                                 <!-- <img src="images/location.png" class="object-cover h-6 w-6 "/> -->
-                                <img src="images/location.svg" class=" text-white flex items-center  rounded-full" alt="location">
-                                <p class="address font-medium ">Ns Road, kolkata</p>
-                                <!-- <a href="javascript:void(0);" class=" text-white flex items-center gap-1 pb-1  rounded-full"><img src="images/location.svg" alt="arrow-right"></a> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="140 30 350 480" style="enable-background:new 0 0 600 600;" xml:space="preserve" class="h-6 w-6">
+                                        
+                                    <g id="objects">
+                                           <g>
+                                                <path style="fill:var(--text-col);" d="M451.468,224.107c-2.216,127.548-96.026,221.803-134.877,255.438     c-9.537,8.257-23.672,8.222-33.208-0.036c-39.342-34.07-134.875-130.168-134.875-260.002c0-83.59,67.701-151.371,151.261-151.5     C384.989,67.876,452.949,138.9,451.468,224.107z"></path>
+                                                <circle style="fill:var(--bg-card);" cx="300.008" cy="218.507" r="108.5"></circle>
+                                            </g>
+                                    </g>
+                                    </svg>                                <p class="address font-medium ">Ns Road, kolkata</p>
+                                <!-- <a href="javascript:void(0);" class=" text-[var-(--primaryText)] flex items-center gap-1 pb-1  rounded-full"><img src="images/location.svg" alt="arrow-right"></a> -->
                             </div>
                             <div>
                                 <p class="store">Store <strong>7</strong> Days Open</p>
@@ -687,20 +753,27 @@
                             </p>
     
                         </div>
-                        <button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
+                        <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
                                         Contact 
-                                        <svg class="w-5 md:w-6" fill="var(--theme-alternate-text-col)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
+                                        <svg class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                                     </button> 
                     </div>
                 </div>
-                <div class="medical-hall bg-[white]  shadow-lg border border-gray-300 rounded-lg p-1 w-full relative">
+                <div class="medical-hall bg-[var(--bg-card)]  shadow-lg border border-gray-300 rounded-lg p-1 w-full relative">
                     <div class="medical-portfolio flex gap-2">
                         <img src="images/mstore.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-40 md:h-40  object-cover object-center border border-gray-300">
                         <div class="medical-details">
-                            <h4 class="text-lg mb-1">John Medical Store</h4>
+                            <p class="title text-base font-bold">John Medical Store</p>
                             <div class="flex mb-1">
-                                <img src="images/location.svg" class=" text-white flex items-center  rounded-full" alt="location">
-                                <p class="address font-medium ">Ns Road, kolkata</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="140 30 350 480" style="enable-background:new 0 0 600 600;" xml:space="preserve" class="h-6 w-6">
+                                        
+                                    <g id="objects">
+                                           <g>
+                                                <path style="fill:var(--text-col);" d="M451.468,224.107c-2.216,127.548-96.026,221.803-134.877,255.438     c-9.537,8.257-23.672,8.222-33.208-0.036c-39.342-34.07-134.875-130.168-134.875-260.002c0-83.59,67.701-151.371,151.261-151.5     C384.989,67.876,452.949,138.9,451.468,224.107z"></path>
+                                                <circle style="fill:var(--bg-card);" cx="300.008" cy="218.507" r="108.5"></circle>
+                                            </g>
+                                    </g>
+                                    </svg>                                <p class="address font-medium ">Ns Road, kolkata</p>
                             </div>
                             <div>
                                 <p class="store">Store <strong>7</strong> Days Open</p>
@@ -720,20 +793,27 @@
                             </p>
     
                         </div>
-                        <button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
+                        <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
                                         Contact 
-                                        <svg class="w-5 md:w-6" fill="var(--theme-alternate-text-col)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
+                                        <svg class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                                     </button> 
                     </div>
                 </div>
-                <div class="medical-hall bg-[white]  shadow-lg border border-gray-300 rounded-lg p-1 w-full relative">
+                <div class="medical-hall bg-[var(--bg-card)]  shadow-lg border border-gray-300 rounded-lg p-1 w-full relative">
                     <div class="medical-portfolio flex gap-2">
                         <img src="images/mstore.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-40 md:h-40  object-cover object-center border border-gray-300">
                         <div class="medical-details">
-                            <h4 class="text-lg mb-1">John Medical Store</h4>
+                            <p class="title text-base font-bold">John Medical Store</p>
                             <div class="flex mb-1">
-                                <img src="images/location.svg" class=" text-white flex items-center  rounded-full" alt="location">
-                                <p class="address font-medium ">Ns Road, kolkata</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="140 30 350 480" style="enable-background:new 0 0 600 600;" xml:space="preserve" class="h-6 w-6">
+                                        
+                                    <g id="objects">
+                                           <g>
+                                                <path style="fill:var(--text-col);" d="M451.468,224.107c-2.216,127.548-96.026,221.803-134.877,255.438     c-9.537,8.257-23.672,8.222-33.208-0.036c-39.342-34.07-134.875-130.168-134.875-260.002c0-83.59,67.701-151.371,151.261-151.5     C384.989,67.876,452.949,138.9,451.468,224.107z"></path>
+                                                <circle style="fill:var(--bg-card);" cx="300.008" cy="218.507" r="108.5"></circle>
+                                            </g>
+                                    </g>
+                                    </svg>                                <p class="address font-medium ">Ns Road, kolkata</p>
                             </div>
                             <div>
                                 <p class="store">Store <strong>7</strong> Days Open</p>
@@ -753,9 +833,9 @@
                             </p>
     
                         </div>
-                        <button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
+                        <button class="bg-[var(--primary)] text-[var(--primaryText)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="">
                                         Contact 
-                                        <svg class="w-5 md:w-6" fill="var(--theme-alternate-text-col)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
+                                        <svg class="w-5 md:w-6" fill="var(--primaryText)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
                                     </button> 
                     </div>
                 </div>
@@ -766,12 +846,12 @@
     </div>
 
     <!-- Contact Us Modal -->
-    <div id="modelConfirm2" class=" hidden backdrop-blur-sm  bg-gray-100 bg-opacity-75 justify-center items-center overflow-y-auto  overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50 p-4" >
-        <div class="modal-box shadow-xl shadow-black-500 flex flex-col border-2 border-[var(--theme-col)] gap-2 w-11/12 md:w-9/12 lg:w-1/2 lg:max-w-2xl bg-[var(--main-bg)] px-2 pb-2 rounded-lg overflow-auto overscroll-none p-4  min-h-[500px]   ">
+    <div id="modelConfirm2" class=" hidden backdrop-blur-sm  bg-gray-200 bg-opacity-75 justify-center items-center overflow-y-auto  overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50 p-4" >
+        <div class="modal-box shadow-xl shadow-black-500 flex flex-col border-2 border-[var(--primary)]  gap-2 w-11/12 md:w-1/2 lg:max-w-2xl bg-[var(--primaryText)] text-[var(--text-grey)] px-2 pb-2 rounded-lg overflow-auto overscroll-none p-4 max-h-[90vh] overflow-y-auto relative   ">
             <!-- Popup Header -->
             <div class="flex justify-between items-center mb-4">
-                <h2 class="text-xl font-bold">Contact Us</h2>
-                <button id="closePopup" class="text-gray-500 hover:text-gray-700" onclick="closeModal('modelConfirm2')">
+                <h2 class="text-xl font-bold text-[var(--primary)]">Contact Us</h2>
+                <button id="closePopup" class="text-gray-500 " onclick="closeModal('modelConfirm2')">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -783,30 +863,30 @@
 
                 <!-- Name Field -->
                 <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" id="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name" required>
+                    <label for="name" class="block text-sm font-medium text-[var(--text-col)]">Name</label>
+                    <input type="text" id="name" class="text-[var(--text-col)] mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name" required>
                     <p class="text-red-500 text-xs hidden" id="nameError">Name is required.</p>
                 </div>
 
                 <!-- Email Field -->
                 <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" required>
+                    <label for="email" class="block text-sm font-medium text-[var(--text-col)]">Email</label>
+                    <input type="email" id="email" class="text-[var(--text-col)] mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" required>
                     <p class="text-red-500 text-xs hidden" id="emailError">Valid email is required.</p>
                 </div>
 
                 <!-- Phone Field -->
                 <div class="mb-4">
-                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                    <input type="tel" id="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 ```html
+                    <label for="phone" class="block text-sm font-medium text-[var(--text-col)]">Phone Number</label>
+                    <input type="tel" id="phone" class="text-[var(--text-col)] mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 ```html
                     focus:ring-blue-500" placeholder="Enter your phone number" required>
                     <p class="text-red-500 text-xs hidden" id="phoneError">Phone number is required.</p>
                 </div>
 
                 <!-- Best Time to Contact Dropdown -->
                 <div class="mb-4">
-                    <label for="bestTime" class="block text-sm font-medium text-gray-700">Best Time to Contact</label>
-                    <select id="bestTime" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    <label for="bestTime" class="block text-sm font-medium text-[var(--text-col)]">Best Time to Contact</label>
+                    <select id="bestTime" class="text-[var(--text-col)] mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         <option value="" disabled selected>Select a time</option>
                         <option value="morning">Morning (8 AM - 12 PM)</option>
                         <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
@@ -817,8 +897,8 @@
 
                 <!-- Contact Category Dropdown -->
                 <div class="mb-4">
-                    <label for="contactCategory" class="block text-sm font-medium text-gray-700">Contact Category</label>
-                    <select id="contactCategory" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    <label for="contactCategory" class="block text-sm font-medium text-[var(--text-col)]">Contact Category</label>
+                    <select id="contactCategory" class=" text-[var(--text-col)] mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         <option value="" disabled selected>Select a category</option>
                         <option value="general">General Inquiry</option>
                         <option value="support">Support</option>
@@ -830,16 +910,16 @@
 
                 <!-- Message Field -->
                 <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your message" required></textarea>
+                    <label for="message" class="block text-sm font-medium text-[var(--text-col)]">Message</label>
+                    <textarea id="message" rows="4" class="text-[var(--text-col)] mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your message" required></textarea>
                     <p class="text-red-500 text-xs hidden" id="messageError">Message is required.</p>
                 </div>
 
                 <div class="flex justify-center">
-                    <!-- <button type="button" id="cancelPopup" onclick="closeModal('modelConfirm2')" class="mr-2 px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                    <!-- <button type="button" id="cancelPopup" onclick="closeModal('modelConfirm2')" class="mr-2 px-4 py-2 text-sm font-medium text-[var(--text-grey)] bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
                         Cancel
                     </button> -->
-                    <button type="submit" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="px-4 py-2 text-sm font-medium text-[var-(--primaryText)] bg-[var(--bg)] rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-500">
                         Submit
                     </button>
                 </div>
@@ -851,11 +931,11 @@
      <!-- Contact Us Popup -->
      <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
         <!-- Popup Container -->
-        <div class="bg-white rounded-lg shadow-lg w-full max-w-md mx-4 popup-container">
+        <div class="bg-[var(--bg-card)] rounded-lg shadow-lg w-full max-w-md mx-4 popup-container">
             <!-- Popup Header -->
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-xl font-bold">Contact Us</h2>
-                <button id="closePopup" class="text-gray-500 hover:text-gray-700">
+                <button id="closePopup" class="text-gray-500 ">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -865,7 +945,7 @@
             <form id="contactForm">
                 <!-- Contact Category Dropdown -->
                 <div class="mb-4">
-                    <label for="contactCategory" class="block text-sm font-medium text-gray-700">Contact Category</label>
+                    <label for="contactCategory" class="block text-sm font-medium text-[var(--text-grey)]">Contact Category</label>
                     <select id="contactCategory" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         <option value="" disabled selected>Select a category</option>
                         <option value="general">General Inquiry</option>
@@ -878,21 +958,21 @@
 
                 <!-- Name Field -->
                 <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <label for="name" class="block text-sm font-medium text-[var(--text-grey)]">Name</label>
                     <input type="text" id="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name" required>
                     <p class="text-red-500 text-xs hidden" id="nameError">Name is required.</p>
                 </div>
 
                 <!-- Email Field -->
                 <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <label for="email" class="block text-sm font-medium text-[var(--text-grey)]">Email</label>
                     <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" required>
                     <p class="text-red-500 text-xs hidden" id="emailError">Valid email is required.</p>
                 </div>
 
                 <!-- Phone Field -->
                 <div class="mb-4">
-                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <label for="phone" class="block text-sm font-medium text-[var(--text-grey)]">Phone Number</label>
                     <input type="tel" id="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 ```html
                     focus:ring-blue-500" placeholder="Enter your phone number" required>
                     <p class="text-red-500 text-xs hidden" id="phoneError">Phone number is required.</p>
@@ -900,7 +980,7 @@
 
                 <!-- Best Time to Contact Dropdown -->
                 <div class="mb-4">
-                    <label for="bestTime" class="block text-sm font-medium text-gray-700">Best Time to Contact</label>
+                    <label for="bestTime" class="block text-sm font-medium text-[var(--text-grey)]">Best Time to Contact</label>
                     <select id="bestTime" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         <option value="" disabled selected>Select a time</option>
                         <option value="morning">Morning (8 AM - 12 PM)</option>
@@ -912,22 +992,23 @@
 
                 <!-- Message Field -->
                 <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <label for="message" class="block text-sm font-medium text-[var(--text-grey)]">Message</label>
                     <textarea id="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your message" required></textarea>
                     <p class="text-red-500 text-xs hidden" id="messageError">Message is required.</p>
                 </div>
 
                 <div class="flex justify-end">
-                    <button type="button" id="cancelPopup" class="mr-2 px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                    <button type="button" id="cancelPopup" class="mr-2 px-4 py-2 text-sm font-medium text-[var(--text-grey)] bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
                         Cancel
                     </button>
-                    <button type="submit" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="px-4 py-2 text-sm font-medium text-[var-(--primaryText)] bg-blue-600 rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-500">
                         Submit
                     </button>
                 </div>
             </form>
         </div>
     </div>
+   
    
 </div>
 </body>
