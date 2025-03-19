@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Detail Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header id="header" class="bg-[#923000] text-white text-center py-6 sticky top-0 z-10 shadow-md">
+        <h1 class="text-3xl font-bold">Dr. Jane Doe</h1>
+        <p class="text-lg">Specialist in Cardiology</p>
+    </header>
+
+    <!-- Doctor Details Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <img src="https://via.placeholder.com/150" alt="Doctor Photo" class="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-6">
+            <div>
+                <h2 class="text-2xl font-bold text-[#923000] mb-4">About Dr. Jane Doe</h2>
+                <p class="text-gray-700 mb-4">Dr. Jane Doe is a leading expert in cardiology, bringing over 15 years of experience in heart health...</p>
+                <ul class="text-gray-600 space-y-2">
+                    <li><strong>Education:</strong> Harvard Medical School</li>
+                    <li><strong>Experience:</strong> 15+ Years</li>
+                    <li><strong>Location:</strong> 123 Health St., New York, NY</li>
+                    <li><strong>Contact:</strong> (123) 456-7890</li>
+                    <li><strong>Email:</strong> janedoe@example.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+        <h2 class="text-2xl font-bold text-[#923000] mb-6 text-center">Contact Dr. Jane Doe</h2>
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name:</label>
+                <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Your Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700 font-medium mb-2">Message:</label>
+                <textarea id="message" name="message" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#923000] to-[#cd5700] text-white font-semibold rounded-lg hover:from-[#cd5700] hover:to-[#923000] transition ease-in-out duration-300">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Book Appointment Button -->
+    <footer class="text-center py-6 mt-6">
+        <button id="book-appointment-btn" class="px-8 py-4 bg-gradient-to-r from-[#923000] to-[#cd5700] text-white font-semibold rounded-full hover:from-[#cd5700] hover:to-[#923000] transition ease-in-out duration-300">Book Appointment</button>
+    </footer>
+
+    <!-- Modal Popup -->
+    <div id="appointment-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-gray-800">Book Appointment</h3>
+                <button id="close-modal-btn" class="text-gray-600 hover:text-gray-900 text-2xl">&times;</button>
+            </div>
+            <form class="space-y-4">
+                <div>
+                    <label for="appointment-date" class="block text-gray-700 font-medium mb-2">Select Date:</label>
+                    <input type="text" id="appointment-date" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+                </div>
+                <div>
+                    <label for="appointment-time" class="block text-gray-700 font-medium mb-2">Select Time:</label>
+                    <input type="text" id="appointment-time" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+                </div>
+                <div>
+                    <label for="clinic-location" class="block text-gray-700 font-medium mb-2">Select Clinic:</label>
+                    <select id="clinic-location" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required>
+                        <option value="">Choose a clinic...</option>
+                        <option value="clinic-1">Health Clinic 1</option>
+                        <option value="clinic-2">Health Clinic 2</option>
+                        <option value="clinic-3">Health Clinic 3</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#923000] to-[#cd5700] text-white font-semibold rounded-lg hover:from-[#cd5700] hover:to-[#923000] transition ease-in-out duration-300">Confirm Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize Flatpickr for date and time selection
+        flatpickr("#appointment-date", {
+            dateFormat: "Y-m-d",
+            minDate: "today"
+        });
+        flatpickr("#appointment-time", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            time_24hr: true
+        });
+
+        // Modal toggle logic
+        const header = document.getElementById('header');
+        const modal = document.getElementById('appointment-modal');
+        const bookAppointmentBtn = document.getElementById('book-appointment-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        bookAppointmentBtn.addEventListener('click', () => {
+            header.classList.remove('sticky');  // Remove sticky class when modal is opened
+            modal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            header.classList.add('sticky');  // Re-add sticky class when modal is closed
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                header.classList.add('sticky');  // Re-add sticky class when modal is closed by clicking outside
+            }
+        });
+    </script>
+</body>
+</html>

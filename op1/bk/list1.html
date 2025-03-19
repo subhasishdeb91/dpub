@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Main Layout -->
+    <div class="flex flex-1">
+        <!-- Sidebar -->
+        <div class="w-64 bg-gray-800 text-white p-6">
+            <!-- Brand Logo -->
+            <div class="mb-6">
+                <img src="logo.png" alt="Brand Logo" class="w-full max-w-[150px]">
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block hover:text-blue-400">Home</a></li>
+                    <li><a href="#about" class="block hover:text-blue-400">About</a></li>
+                    <li><a href="#services" class="block hover:text-blue-400">Services</a></li>
+                    <li><a href="#contact" class="block hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 bg-gray-100 p-8">
+            <!-- Header -->
+            <div class="header mb-8">
+                <!-- Thin Marketing Banner -->
+                <div class="bg-blue-600 text-white text-center py-2 mb-4">
+                    Special Offer! Get 20% off on all products. Limited time only!
+                </div>
+
+                <!-- Google Search Bar -->
+                <div class="flex justify-center mb-8">
+                    <form action="https://www.google.com/search" method="GET" class="w-full max-w-md flex justify-between">
+                        <input
+                            type="text"
+                            name="q"
+                            placeholder="Search Google..."
+                            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <div class="flex ml-4">
+                            <button class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" id="list-view">List View</button>
+                            <button class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" id="grid-view">Grid View</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Filter and View Toggle -->
+            <div class="flex justify-between mb-4">
+                <div class="filter">
+                    <select class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="all">All</option>
+                        <option value="product1">Product 1</option>
+                        <option value="product2">Product 2</option>
+                        <option value="product3">Product 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Listing -->
+            <div class="listing mt-8" id="listing">
+                <!-- List View -->
+                <div class="list-view" id="list-view-content">
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="text-lg font-bold mb-2">Product 1</h3>
+                                <p class="text-gray-700">This is a sample product.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="text-lg font-bold mb-2">Product 2</h3>
+                                <p class="text-gray-700">This is another sample product.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="text-lg font-bold mb-2">Product 3</h3>
+                                <p class="text-gray-700">This is yet another sample product.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Grid View -->
+                <div class="grid-view hidden" id="grid-view-content">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold mb-2">Product 1 </h3>
+                            <p class="text-gray-700">This is a sample product.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold mb-2">Product 2</h3>
+                            <p class="text-gray-700">This is another sample product.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold mb-2">Product 3</h3>
+                            <p class="text-gray-700">This is yet another sample product.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const listViewButton = document.getElementById('list-view');
+        const gridViewButton = document.getElementById('grid-view');
+        const listViewContent = document.getElementById('list-view-content');
+        const gridViewContent = document.getElementById('grid-view-content');
+
+        listViewButton.addEventListener('click', () => {
+            listViewContent.classList.remove('hidden');
+            gridViewContent.classList.add('hidden');
+        });
+
+        gridViewButton.addEventListener('click', () => {
+            gridViewContent.classList.remove('hidden');
+            listViewContent.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Your Page Title</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#923000">
+    <meta name="description" content="Your page description">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="copyright" content="Copyright 2023 Your Company">
+
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+
+
+    <title>medisynk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+
+<body>
+    
+    <div class="h-screen w-screen m-0 p-0 bg-[var(--theme-bg-col)]"> 
+        <div class="header-ad-banner ">
+            <div class="slider-banner md:hidden">
+                <div class="owl-carousel owl-theme demo owl-loaded owl-drag">
+                            
+                     
+                    <!--
+                    <div class="item">
+                        <img src="images/HeaderAd2.png" alt="Doctor" />
+                    </div> -->
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-375px, 0px, 0px); transition: 0.25s; width: 750px;"><div class="owl-item" style="width: 375px;"><div class="item   ">
+                                <div class=" items-center text-center bg-[url('images/HeaderAd.png')] text-[var(--topbar-text-color)]  ">
+                                    <span>For business querry contact 9999999999
+                                    </span>
+                                </div>  
+                            </div></div><div class="owl-item active" style="width: 375px;"><div class="item md:hidden">
+
+                        <img src="images/HeaderAd4.png" alt="Doctor">
+                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+            </div>
+            <div class=" sm:hidden md:block items-center text-center bg-[var(--topbar-color)] text-[var(--topbar-text-color)]  ">
+                <span>For business querry contact 9999999999
+                </span>
+            </div>
+        </div>
+       
+        <div class="grid grid-cols-12 p-1 bg-[var(--theme-col)] sticky top-0 z-10 items-center ">
+            <div class=" col-span-5 md:col-span-3 ">
+                <div class="container mx-auto px-3 text-left md:text-left ">
+                    <a href="./index.html">
+
+                    </a><div></a><a href="./index.html">
+                        <img src="images/main-logo.svg" alt="avatar" class="header-logo w-28 sm:w-36 md:w-44 invert">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" md:col-span-6 hidden md:block ">
+                 <div class="searchBarPanel banner-content">
+                    <div class="container  ">
+                        
+                    </div>
+        
+        
+                </div> 
+                    
+            </div>
+            <div class="pl-2 col-span-6 md:col-span-2 ">
+                
+                <div id="location">
+                    <div class="  text-[var(--theme-alternate-text-col)]  text-xs md:text-sm lg:text-base">
+                        <div class="select flex items-center ">
+                            <select id="location" class="input custom-select bg-transparent  text-right ">
+                                <option selected="" value="All">Select Location</option>
+                                <option value="Location1">Location1</option>
+                                <option value="Location2">Location2</option>
+                                <option value="Location3">Location3</option>
+                            </select>
+                            <img src="images/location.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+                <div class="flex col-span-1 justify-end ">
+    
+                    <button type="button" class=" text-[var(--theme-alternate-text-col)] btn btn-orange show-sidebar relative z-50 ">
+                        <div class="nav-icon w-6 md:w-8 lg:w-10 h-6" id="nav-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <aside class="sidebar  z-5 ">
+                        <div class="block-dom "></div>
+                        <div class="sidebar-content   bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] w-1/2 md:w-1/3 lg:w-1/4">
+    
+                     <nav class="flex flex-col bg-[var(--theme-col)] h-screen tex-gray-900 border border-[var(--theme-col)]">
+                        <div class="block flex-wrap mt-8 items-center justify-center self-center text-center">
+                          <div class="">
+                            <img src="images/avatar1.jpg" class="mx-auto  rounded-full w-1/2 md:w-1/3">
+                          </div>
+                          <div class="">
+                            <span class="font-semibold">Anonymus user</span>
+                            <div class="">
+                            <span class="text-xs">Default location</span>
+                            <select id="location" class="input custom-select bg-transparent  text-center text-sm ">
+                                <option selected="" value="All">Select Location</option>
+                                <option value="Location1">Location1</option>
+                                <option value="Location2">Location2</option>
+                                <option value="Location3">Location3</option>
+                            </select>
+                            </div>
+                            
+                            <!-- <button class="bg-green-500 text-white px-4 py-2 rounded-md border border-blue-500 hover:bg-white hover:text-green-500">
+                              Premium
+                            </button> -->
+                          </div>
+                        </div>
+                        <div class="mt-10 mb-4 ">
+                          <ul class=" p-2">
+                            <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
+                                <span>
+                                  <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="currentColor"></path>
+                                    <path d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z" fill="currentColor"></path>
+                                  </svg>
+                                </span>
+                                <a target="_blank">
+                                 
+                                  <span class="ml-2">Account</span>
+                                </a>
+                            </li>
+                            <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
+                                <span>
+                                    <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C11.85 18 13.55 17.37 14.9 16.31L19.59 21L21 19.59L16.31 14.9C17.37 13.55 18 11.85 18 10C18 5.58 14.42 2 10 2ZM10 4C13.32 4 16 6.68 16 10C16 13.32 13.32 16 10 16C6.68 16 4 13.32 4 10C4 6.68 6.68 4 10 4Z" fill="currentColor"/>
+                                        <path d="M11 6V10.59L13.71 13.29L14.71 12.29L12 9.59V6H11Z" fill="currentColor"/>
+                                      </svg>
+                                </span>
+                                <a href="./searchhistory.html" target="_self">
+                                  <span class="ml-2">Search History</span>
+                                </a>
+                              </li>
+                            <li class="mb-2 py-1 flex flex-row  border-gray-300 ">
+                              <span>
+                                <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="currentColor"/>
+                                  </svg>
+                              </span>
+                              <a target="_blank">
+                                <span class="ml-2 " onclick="openModal('modelConfirm2')" >Contact Us</span>
+                              </a>
+                            </li>
+                            
+                            
+                            <li class="mb-2 py-1 flex flex-row  border-gray-300  ">
+                              <span>
+                                <svg class="fill-current h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- User Profile -->
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
+                                    <!-- Information Circle -->
+                                    <path d="M13 9H11V7H13V9ZM13 17H11V11H13V17Z" fill="currentColor"/>
+                                  </svg>
+                              </span>
+                              <a target="_blank">
+                               
+                                <span class="ml-2">About Us</span>
+                              </a>
+                            </li>
+                           
+                            
+                            <li class="mb-2 py-1 flex flex-row  border-gray-300 blur-sm ">
+                              <span>
+                                <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3C8.86384 3 10.4299 4.27477 10.874 6H19V8H10.874C10.4299 9.72523 8.86384 11 7 11C4.79086 11 3 9.20914 3 7C3 4.79086 4.79086 3 7 3ZM7 9C8.10457 9 9 8.10457 9 7C9 5.89543 8.10457 5 7 5C5.89543 5 5 5.89543 5 7C5 8.10457 5.89543 9 7 9Z" fill="currentColor"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17 20C15.1362 20 13.5701 18.7252 13.126 17H5V15H13.126C13.5701 13.2748 15.1362 12 17 12C19.2091 12 21 13.7909 21 16C21 18.2091 19.2091 20 17 20ZM17 18C18.1046 18 19 17.1046 19 16C19 14.8954 18.1046 14 17 14C15.8954 14 15 14.8954 15 16C15 17.1046 15.8954 18 17 18Z" fill="currentColor"></path>
+                                </svg>
+                              </span>
+                              <a target="_blank" >
+                                <span class="ml-2">Notificatios</span>
+                              </a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                        <div class="fixed bottom-0 flex  m-2">
+                            <span class="text-sm flex items-center">
+                              Made with
+                              <svg class="fill-current h-4 w-4 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z"></path>
+                              </svg>
+                              in India
+                            </span>
+                          </div>
+                      </nav>
+                      </div>
+                 </aside>
+                </div>
+         </div>
+        <div class="main-banner">
+            <!-- slider start -->
+            <div class="slider-banner">
+                <div class="owl-carousel owl-theme demo owl-loaded owl-drag">
+                    
+                    
+                    
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1125px, 0px, 0px); transition: 0.25s; width: 2250px;"><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b1.png" alt="Doctor">
+                    </div></div><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b2.png" alt="Doctor">
+                    </div></div><div class="owl-item" style="width: 375px;"><div class="item">
+                        <img src="images/b1.png" alt="Doctor">
+                    </div></div><div class="owl-item active" style="width: 375px;"><div class="item">
+                        <img src="images/b2.png" alt="Doctor">
+                    </div></div><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b1.png" alt="Doctor">
+                    </div></div><div class="owl-item cloned" style="width: 375px;"><div class="item">
+                        <img src="images/b2.png" alt="Doctor">
+                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+            </div>
+            <!-- slider finish -->
+        </div>
+        <div class=" searchBarPanel banner-content bg-[var(--theme-search-bg-col)]   sticky top-[35px] md:top-[48px] ">
+            <div class="container mx-auto px-1 py-1 md:py-2">
+                <div class="form_div ">
+                    <form class="grid grid-cols-2 md:grid-cols-5 gap-1 md:gap-4 ">
+                            <!-- <input type="text" id="location-input" placeholder="Select Location"
+                            class="text-sm md:text-base bg-[length:20px_20px] md:bg-[length:24px_24px] pl-5  md:pl-10 border border-solid border-gray-400 bg-[url('images/location.svg')] bg-no-repeat bg-[1px_center] rounded-lg h-8 md:h-12"> -->
+                            <div class="md:col-span-1"></div>
+                            <div class="col-span-2 md:col-span-3 grid grid-cols-2">
+                                <div class="search_bar   text-xs md:text-base col-span-2 pl-5 md:pl-5 border border-solid border-gray-400 bg-[url('images/search.svg')] bg-no-repeat bg-[6px_center] rounded-lg h-8 md:h-12" id="category-search-bar">
+                                    <div class="input_box text-sm md:text-base h-8 md:h-12 " >
+                                        <div class="select h-7 md:h-11 pr-3">
+                                            <select id="categories" class="input custom-select bg-transparent">
+                                                <!-- <option selected value="All"></option> -->
+                                                <option selected value="All"></option>
+                                                <option value="Doctors">Doctors</option>
+                                                <option value="Paramedics">Paramedics</option>
+                                                <option value="Pharmacy">Pharmacy</option>
+                                                <option value="Pathology">Pathology</option>
+                                                <option value="Radiology">Radiology</option>
+                                            </select>
+                                        </div>
+                                        <div
+                                            class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[var(--text-grey)]">
+                                            <div class="slider_box " i>
+                                                <div class="slider text-base " id="placeholder_slider"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="search_bar search_bar_subcatcol-span-1 location-search-bar  text-xs md:text-base pl-5 md:pl-5 border border-solid border-gray-400 bg-[url('images/search.svg')] bg-no-repeat bg-[6px_center] rounded-lg h-8 md:h-12 hidden" id="subcategories">
+                                        <div class="input_box text-sm md:text-base h-8 md:h-12  " >
+                                            <div class="select h-7 md:h-11 pr-3">
+                                                <select id="speciality" class="input custom-select bg-transparent">
+                                                    <option selected value="All">Select speciality</option>
+                                                    <option value="Cardiology">Cardiology</option>
+                                                    <option value="Nephrology">Nephrology</option>
+                                                    <option value="Neurology">Neurology</option>
+                                                </select>
+                                            </div>
+                                            <div
+                                                class="placeholder h-8 md:h-12 absolute flex items-center pointer-events-none text-[var(--text-grey)]">
+                                                <div class="slider_box ">
+                                                    <div class="slider text-base "></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                           
+                        <div class="md:col-span-1"></div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+    <div class="main-content-area mt-0 bg-[var(--main-bg)]">
+        <!-- small list slider -->
+        <div class="container mx-auto">
+            <div class="what-you-want ">
+                <div class="flex flex-row gap-1 justify-between w-full overflow-x-scroll snap-x p-1 border border-[var(--theme-col)] border-opacity-50 rounded-lg">
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl1.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl2.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl3.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl4.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl5.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl6.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg border border-gray-200 rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl7.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor setion -->
+        <div class="doctors-card mt-0  py-2 md:py-4">
+            <div class="container mx-auto px-1 pb-3">
+                <h1 class="text-center sm:text-base md:text-2xl mb-1 md:mb-10"><strong>24</strong> Listing found in your location</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+                    <!-- Doctors Listing -->
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                        <div class="flex">
+
+
+                            <div
+                                class="exp absolute z-2   w-24  text-[var(--theme-alternate-text-col)] text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                                <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
+                            </div>
+                            <div
+                                class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
+                                Ad
+                            </div>
+                        </div>
+
+
+                        <div class="doc-portfolio flex gap-2 md:gap-4">
+                            <img src="images/doc.jpg" alt="Doctor"
+                                class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <div class="doc-details">
+                                <h4 class="title text-base  mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</h4>
+                                <p class="speciality text-sm md:text-base font-bold mb-1">Dermatology
+                                    <span
+                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-[var(--theme-alternate-text-col)] opacity-75">WB12458655</span>
+                                </p>
+                                <p class="degree text-sm md:text-base">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
+                                </p>
+                                <p class="hospitals mt-3 text-sm md:text-base"><strong>Hospitals:</strong> SSKM, RN
+                                    Tagore</p>
+                            </div>
+                        </div>
+                        <div class="doc-book flex justify-between mt-3 items-center">
+                            <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
+                                Sat, Sun, Mon, Tues</p>
+                            <button
+                                class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
+                                onclick="openModal('modelConfirm')">
+                                Book Appointment 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                            </button> 
+
+
+                        </div>
+                    </div>
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                        <div class="flex">
+
+
+                        
+                            <div
+                                class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
+                                Ad
+                            </div>
+                        </div>
+
+
+                        <div class="doc-portfolio flex gap-2 md:gap-4">
+                            <img src="images/doc.jpg" alt="Doctor"
+                                class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <div class="doc-details">
+                                <h4 class="title text-base  mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</h4>
+                                <p class="speciality text-sm md:text-base font-bold mb-1">Dermatology
+                                    <span
+                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-white opacity-75">WB12458655</span>
+                                </p>
+                                <p class="degree text-sm md:text-base">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
+                                </p>
+                                <p class="hospitals mt-3 text-sm md:text-base"><strong>Hospitals:</strong> SSKM, RN
+                                    Tagore</p>
+                            </div>
+                        </div>
+                        <div class="doc-book flex justify-between mt-3 items-center">
+                            <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
+                                Sat, Sun, Mon, Tues</p>
+                                <button
+                                class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
+                                onclick="openModal('modelConfirm')">
+                                Book Appointment 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                            </button> 
+
+
+                        </div>
+                    </div>
+                    <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                        <div class="flex">
+
+
+                            <div
+                                class="exp absolute z-2   w-24  text-white text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                                <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
+                            </div>
+                           
+                        </div>
+
+
+                        <div class="doc-portfolio flex gap-2 md:gap-4">
+                            <img src="images/doc.jpg" alt="Doctor"
+                                class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <div class="doc-details">
+                                <h4 class="title text-base  mb-1 mr-10 md:mr-16">Dr. John Doe Mukherjee Banerjee ro Ganguly</h4>
+                                <p class="speciality text-sm md:text-base font-bold mb-1">Dermatology
+                                    <span
+                                        class="licence text-[10px] font-medium md:text-xs ml-1 bg-[var(--theme-col)] rounded-full px-2 py-1 text-white opacity-75">WB12458655</span>
+                                </p>
+                                <p class="degree text-sm md:text-base">MBBS, Surgeon, Cardiac, MBBS, Surgeon, Cardiac
+                                </p>
+                                <p class="hospitals mt-3 text-sm md:text-base"><strong>Hospitals:</strong> SSKM, RN
+                                    Tagore</p>
+                            </div>
+                        </div>
+                        <div class="doc-book flex justify-between mt-3 items-center">
+                            <p class="text-sm md:text-base"><strong>Fees:</strong> 500.00 + <br><strong>Days:</strong>
+                                Sat, Sun, Mon, Tues</p>
+                                <button
+                                class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
+                                onclick="openModal('modelConfirm')">
+                                Book Appointment 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                            </button> 
+
+
+                        </div>
+                    </div>
+                    
+                    <!-- Medical Store Listing -->
+
+                    <div
+                        class="medical-hall shadow-lg border border-gray-300 rounded-lg p-1 md:p-4 w-full relative bg-white">
+                        <a href="./store.html" class="block">
+
+                        <div class="medical-portfolio flex gap-2">
+                            <img src="images/mstore.jpg" alt="Doctor"
+                            class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <div class="medical-details">
+                                <h4 class="title text-base  mb-1 ">John Medical Store</h4>
+                                <div class="flex">
+                                    <img src="images/location.svg" class="object-cover h-6 w-6 " />
+                                    <p class="address text-base mb-1 px-1">Ns Road, kolkata</p>
+                                </div>
+                                <p class="store"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="store">Chemist Store, Baby Foods</p>
+                        </div>
+                        <div class="medical-book flex justify-between mt-1 items-center">
+                            <div>
+                                <p class="store"></p>
+                                <p><strong>7</strong> Days Open</p>
+                            </div>
+                        
+                                    <button
+                                    class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
+                                    onclick="">
+                                    View Details 
+                                    <svg class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                                </button> 
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- /Medical Store Listing -->
+                    <!-- Ambulance -->
+
+                    <div
+                        class="medical-hall shadow-lg border border-gray-300 rounded-lg p-1 md:p-4 w-full relative bg-white">
+                        <div
+                        class=" sponsored absolute bg-[var(--sponsor-col)] text-[var(--sponsor-text-col)] border border-[var(--sponsor-text-col)] items-center px-2 py-1 rounded-md md:h-fit w-fit text-xs md:text-base -top-1  -left-1 ">
+                        Ad
+                    </div>
+                        <div class="medical-portfolio flex gap-2">
+                            <img src="images/ambulance.webp" alt="Doctor"
+                            class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center" />
+                            <div class="medical-details">
+                                <h4 class="title text-base mb-1">Star Ambulance Service</h4>
+                                <div class="flex">
+                                    <p class="address text-base mb-1">Ns Road, kolkata</p>
+                                </div>
+                                <p class="store"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="store">Chemist Store, Baby Foods</p>
+                        </div>
+                        <div class="medical-book flex justify-between mt-1 items-center">
+                            <div>
+                                <p class="store"></p>
+                                <p><strong>7</strong> Days Open</p>
+                            </div>
+                            <button
+                                    class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base "
+                                    onclick="">
+                                    Contact 
+                                    <svg class="w-5 md:w-6" fill=var(--theme-alternate-text-col) viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                                </button> 
+                        </div>
+                    </div>
+                   <!-- Ambulance -->
+
+                    <!-- Paramedic -->
+                        <div class="doctor shadow-lg border border-gray-300 rounded-lg p-1 md:p-2 w-full relative bg-white ">
+                            <div class="flex">
+
+
+                                <div class="exp absolute z-2   w-24  text-white text-xs flex flex-col justify-start items-center px-5 pt-0 pb-6 bg-[url('images/exp-tag.png')] bg-cover text-center  scale-50 md:scale-75 origin-top -right-5 -top-1 md:-top-2 md:-right-3">
+                                    <span class="font-bold text-2xl mr-1">16 </span>Years of<br>Experience
+                                </div>
+                            
+                            </div>
+
+
+                            <div class="doc-portfolio flex gap-2 md:gap-4">
+                                <img src="images/doc.jpg" alt="Doctor" class="rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  object-cover object-center">
+                                <div class="doc-details">
+                                    <h4 class="title text-base  mb-1 mr-10 md:mr-16"> John Doe </h4>
+                                    <p class="speciality text-sm md:text-base font-bold mb-1">Paramedic
+                                    </p>
+
+                                    <span>GNM</span>
+                                    <p class="degree text-sm md:text-base">Injection, Minor and Major Dressing, Post-operative care</p>
+                                    
+                        <p class=" text-sm md:text-base"><strong>Location : </strong>Kaliyaganj, Raiganj</p>
+                                </div>
+                            </div>
+                            <div class="doc-book flex justify-between mt-3 items-center">
+                                <p class="text-sm md:text-base"><strong>Fees:</strong> 200.00 + <br></p>
+                                    <button class="bg-[var(--theme-col)] text-[var(--theme-alternate-text-col)] flex items-center gap-1 p-2 rounded-full text-xs md:text-base " onclick="openModal('')">
+                                    Contact 
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill="var(--theme-alternate-text-col)" viewBox="0 -960 960 960"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path></svg>
+                                </button> 
+
+
+                            </div>
+                        </div>
+
+                    <!-- paramedic-->
+                   
+                   
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer class="fixed bottom-0 py-4 bg-[#2c160b]">
+        <div class="container mx-auto px-3">
+            <img src="images/main-logo.svg" alt="Logo" class="invert mx-auto block w-40" />
+            <ul class="flex justify-center items-center gap-8 mt-5">
+                <li><a href="javascript:void(0)" class="text-white text-xs">Contact</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-xs">Privacy Policy</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-xs">Terms & Condition</a></li>
+            </ul>
+            <p class="text-center text-white text-xs mt-5">Copyright @2024</p>
+        </div>
+    </footer> -->
+   
+    <footer class="fixed w-full bottom-0">
+        <div class="w-full flex justify-center items-center text-center bg-[var(--theme-col)] ">
+        <span class=" items-center text-xs text-slate-100 text-center">© 2023 <a href="#" class="hover:underline">TestIpsum</a>. All Rights Reserved.
+        </span>
+        </div>
+    </footer>
+
+
+    <!--Modal-->
+    <!-- Main modal -->
+   
+    <!--Modal-->
+    
+
+    <!-- Contact Us Modal -->
+<div id="contact-modal" class="hidden flex bg-gray-100 bg-opacity-75 justify-center items-center overflow-y-auto  overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50">
+    <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-[var(--theme-col)]   h-11/12 w-11/12 md:w-9/12 lg:w-1/2 lg:max-w-2xl ">
+        <div class="flex justify-between items-center mb-6 ">
+            <h3 class="text-xl font-bold text-gray-800">Contact Us</h3>
+            <button id="close-contact-modal" class="text-gray-600 hover:text-gray-900 text-2xl">×</button>
+        </div>
+        <form id="contact-form" class="space-y-4">
+            <!-- Contact Category -->
+            <div>
+                <label for="contact-category" class="block text-gray-700 font-medium mb-2">Contact Category:</label>
+                <select id="contact-category" name="category" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required="">
+                    <option value="">Select a category</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <span class="text-red-500 text-sm hidden" id="category-error">Please select a category</span>
+            </div>
+            <!-- Name -->
+            <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name:</label>
+                <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required="">
+                <span class="text-red-500 text-sm hidden" id="name-error">Please enter your name</span>
+            </div>
+            <!-- Contact Number -->
+            <div>
+                <label for="contact-number" class="block text-gray-700 font-medium mb-2">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact_number" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" pattern="^\d{10}$" required="">
+                <span class="text-red-500 text-sm hidden" id="contact-error">Please enter a valid 10-digit phone number</span>
+            </div>
+            <!-- Email -->
+            <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Your Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required="">
+                <span class="text-red-500 text-sm hidden" id="email-error">Please enter a valid email</span>
+            </div>
+            <!-- Matter -->
+            <div>
+                <label for="matter" class="block text-gray-700 font-medium mb-2">Matter:</label>
+                <textarea id="matter" name="matter" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#923000]" required=""></textarea>
+                <span class="text-red-500 text-sm hidden" id="matter-error">Please describe your matter</span>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#923000] to-[#cd5700] text-white font-semibold rounded-lg hover:from-[#cd5700] hover:to-[#923000] transition ease-in-out duration-300">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+
+
+</body></html>
