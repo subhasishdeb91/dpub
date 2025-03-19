@@ -8,9 +8,7 @@ module.exports = {
           '999': '999',
           '1000': '1000',
         },
-        screens: {
-          'tall': { 'raw': '(min-height: 500px)' },
-        },
+        
       },
     },
   }
