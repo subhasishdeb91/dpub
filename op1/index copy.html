@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Your Page Title</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="theme-color" content="var(--primary)"> -->
+      <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tailwind.config.js"></script>
+    <style>
+        
+        @keyframes diagonalWave {
+          0% { background-position: 0% 0%; }
+          50% { background-position: 100% 100%; }
+          100% { background-position: 0% 0%; }
+        }
+      </style>
+    
+</head>
+
+<body>
+    
+    <div class="h-screen w-screen m-0 p-0 bg-[var(--bg)] text-[var(--text-col)] "> 
+    <div class="main-content-area mt-0 bg-[var-(--bg)]">
+        <!-- small list slider -->
+        <div class="container mx-auto pl-1">
+                <div class="noslider px-2 flex flex-row gap-1 justify-between w-full overflow-x-scroll snap-x p-1 border border-[var(--primary)] border-opacity-50 rounded-lg">
+                    <a href="#">
+                        <div class="box-medical shadow-lg  rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl1.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl2.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl3.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl4.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit ">
+                            <img src="images/smsl/smsl5.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-l rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl6.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-medical shadow-lg rounded-lg w-16 snap-start sm:w-fit">
+                            <img src="images/smsl/smsl7.png" alt="Paramedics" class="rounded opacity-85 w-full" />
+                        </div>
+                    </a>
+                    
+
+                </div>
+        </div>
+
+
+
+         <!-- Filter Component (Responsive) -->
+         <!-- <div class="filter-component py-2">
+            <div class="filter-container noslider flex overflow-x-auto scrollbar-1px whitespace-nowrap md:overflow-x-hidden px-1 mx-auto">
+            <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">All</button>
+            <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">
+                <select id="location" class="input custom-select bg-transparent    "> Tst 
+                    <option selected="" value="All">Filter</option>
+                    <option value="Location1">Location1</option>
+                    <option value="Location2">Location2</option>
+                    <option value="Location3">Location3</option>
+                </select>
+            </button>
+            <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">10 + Experience</button>
+            <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">Male Doctors</button>
+            <button class="filter-item inline-block py-1 px-2 bg-[var(--bg-card)]  rounded-md mr-2 md:mr-4">Female Doctors</button>
+            
+            </div>
+        </div> -->
+ 
+        <button class="hidden md:flex justify-center  w-full font-bold bg-[var(--primaryText)] text-[var(--primary)]  gap-1 h-auto rounded-full text-4xl
+        " onclick="openModal('')">
+            <span class="">CONTACT</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6" fill="var(--primary)" viewBox="0 -960 960 960">
+            <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path>
+            </svg>
+        </button>
+
+
+        <button class="relative px-6 py-3 bg-[var(--primaryText)] text-[var(--primary)]font-semibold rounded-lg overflow-hidden shadow-lg">
+            <span class="relative z-10"> Contact</span>
+        
+            <!-- Moving Wave Animation -->
+            <div class="absolute inset-0 overflow-hidden">
+              <div class="absolute bottom-0 left-0 w-[200%] h-full bg-gradient-to-t from-[var(--primary)] via-[var(--primaryText)] to-transparent opacity-50 animate-[wave_4s_linear_infinite]"></div>
+            </div>
+          </button>
+          <button class="relative px-6 py-3 text-white font-semibold rounded-lg overflow-hidden shadow-lg"
+          style="background: linear-gradient(45deg, #38bdf8, #0ea5e9, #0284c7);
+                 background-size: 300% 300%;
+                 animation: diagonalWave 4s linear infinite;">
+          🌊 Diagonal Wave Button
+        </button>
+            
+        
+       <!-- <irctc-139></irctc-139>
+       digisathi- 18008913333
+
+
+       <npci->
+        9.12-autopay-upi-100059015778
+        9.15-irctc-upi-  1000059027037
+       </npci-> -->
+
+    </div>
+
+    
+   
+    <footer class="fixed w-full bottom-0">
+        <div class="w-full flex justify-center items-center text-center bg-[var(--primary)] ">
+        <span class=" items-center text-xs text-slate-100 text-center">All Rights Reserved.
+        </span>
+        </div>
+    </footer>
+
+</div>
+</body>
+
+</html>
