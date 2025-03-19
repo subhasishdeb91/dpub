@@ -1,15 +1,50 @@
     :root {
+      /* Theme default   */
       --primary: #211275 ;
       --primaryText: #e5f3fd ;
       --bg:#4a5ce2;
       --bg-card:#f1f0f5;
-      --text-col:#110369;
+      --text-col:#0a023c;
       --text-grey:#a4b4c0;
-
+      --highlight : #ff4D00; 
       --sponsor-col: #f7ddd0; 
-      --sponsor-text-col: #2f0c43;
-      --topbar-color : #ff4D00; 
-      --topbar-text-color : #923000; 
+     
+
+
+      /*
+       --primary: #013358 ;
+      --primaryText: #e5f3fd ;
+      --bg:#0869b4;
+      --bg-card:#e2ebf3;
+      --text-col:#061f32;
+      --text-grey:#e9eaeb;
+      --highlight : #d5400e; 
+      --sponsor-col: #f7ddd0;
+
+      
+      Theme default  
+      --primary: #211275 ;
+      --primaryText: #e5f3fd ;
+      --bg:#4a5ce2;
+      --bg-card:#f1f0f5;
+      --text-col:#0a023c;
+      --text-grey:#a4b4c0;
+      --highlight : #ff4D00; 
+      --sponsor-col: #f7ddd0;  
+      Theme1
+      --primary: #053a62 ;
+      --primaryText: #e5f3fd ;
+      --bg:#0869b4;
+      --bg-card:#e2ebf3;
+      --text-col:#0a023c;
+      --text-grey:#e9eaeb;
+      --highlight : #d5400e; 
+      --sponsor-col: #f7ddd0; 
+      */
+
+      /* --sponsor-text-col: #110369; */
+      /* --topbar-color : #ff4D00;  */
+      /* --topbar-text-color : #110369;  */
         }
 
 body{
@@ -107,13 +142,14 @@ select {
     font-size: large;
  }
  .bannerslider .item {
-    background: var(--theme-col);
+    background: var(--primary);
     height: 175px;
+
 }
 .slider .item {
-    background: var(--theme-col);
+    background: var(--primary);
     height: 175px;
-    width: auto
+    width: auto;
 }
 .slider h2 {
     color: #FFF;
